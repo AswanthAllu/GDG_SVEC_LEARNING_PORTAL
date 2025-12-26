@@ -9,13 +9,23 @@ const QuizPage = () => {
   const episode = course?.episodes.find(e => e.id === parseInt(episodeId));
   const questions = episode?.quiz || [];
 
-  // STATE: Default to 'playing' to skip the start screen
+  // STATE
   const [gameState, setGameState] = useState('playing'); 
   const [currentQIndex, setCurrentQIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(600); // 10 mins
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
+
+  // --- RETRY LOGIC (Soft Reset) ---
+  const handleRetry = () => {
+    setScore(0);
+    setCurrentQIndex(0);
+    setTimeLeft(600);
+    setSelectedOption(null);
+    setIsAnswered(false);
+    setGameState('playing'); // Instantly restarts the quiz
+  };
 
   // Timer
   useEffect(() => {
@@ -132,7 +142,8 @@ const QuizPage = () => {
           </div>
 
           <div className="result-buttons">
-            <button onClick={() => window.location.reload()} className="btn-primary-large">
+            {/* UPDATED RETRY BUTTON */}
+            <button onClick={handleRetry} className="btn-primary-large">
               <RefreshCcw size={18} /> Retry
             </button>
             <Link to={`/series/${courseId}`} className="btn-secondary-large">
