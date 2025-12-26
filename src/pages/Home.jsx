@@ -30,7 +30,7 @@ const Home = () => {
             </div>
             
             <div className="card-content">
-              <span className="series-label">Series</span>
+              <span className="series-label">Series 1</span>
               <h3>{course.title}</h3>
               <p>{course.description}</p>
               

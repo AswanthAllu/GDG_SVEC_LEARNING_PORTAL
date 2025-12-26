@@ -3,8 +3,8 @@
 export const courses = [
   {
     id: "web-dev",
-    title: "Web Development Series 1",
-    description: "Master HTML, CSS, and Tools from scratch in this exclusive series.",
+    title: "Static Web Development",
+    description: "Master in Static Web page Design and Deployment",
     icon: "</>",
     episodes: [
       { 
