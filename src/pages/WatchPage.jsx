@@ -21,13 +21,16 @@ const WatchPage = () => {
       {/* 1. TOP NAVIGATION BAR */}
       <div className="video-nav-bar">
         <Link to={`/series/${courseId}`} className="back-link">
-          <ArrowLeft size={18} /> Back to Syllabus
+          <ArrowLeft size={18} />
         </Link>
         <span className="episode-badge">Episode {episode.id}</span>
       </div>
 
       <div className="cinema-container">
-        
+          <div className="video-text">
+         <h1 style={{ fontSize: "1.3rem",textAlign:"center" }}>{episode.title}</h1>
+
+          </div>
         {/* 2. THE VIDEO PLAYER */}
         <div className="video-frame-border">
           <div className="video-wrapper">
@@ -42,10 +45,7 @@ const WatchPage = () => {
 
         {/* 3. INFO & CONTROLS */}
         <div className="video-controls">
-          <div className="video-text">
-            <h1>{episode.title}</h1>
-            <p>{episode.desc}</p>
-          </div>
+         
 
           <div className="action-buttons">
             <Link to={`/series/${courseId}/quiz/${episodeId}`} className="quiz-btn-large">
