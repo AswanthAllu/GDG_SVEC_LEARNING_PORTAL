@@ -122,6 +122,64 @@ export const courses = [
             answer: "HTML and CSS work together to create a webpage."
           }
         ]
+      },
+      {
+        id: 3,
+        title: "VS Code & Development Setup",
+        desc: "Set up your environment and learn the most popular code editor in the world.",
+        videoUrl: "https://mega.nz/embed/HSgRzRDL#KpGCflAlQWF4AUPdU0xtwmgi207bpGCIba0vXDdnyGw",
+        quiz: [
+          {
+            question: "1. What does “VS Code” stand for?",
+            options: ["Visual Source Code", "Visual Studio Code", "Version Source Code", "Verified Studio Code"],
+            answer: "Visual Studio Code"
+          },
+          {
+            question: "2. Which company developed VS Code?",
+            options: ["Apple", "Google", "Microsoft", "Adobe"],
+            answer: "Microsoft"
+          },
+          {
+            question: "3. What is the primary use of VS Code?",
+            options: ["Video editing", "Writing and debugging code", "Photo editing", "Data analysis"],
+            answer: "Writing and debugging code"
+          },
+          {
+            question: "4. VS Code is mainly used for which type of development?",
+            options: ["Graphic design", "Web and software development", "Game development only", "Mobile-only development"],
+            answer: "Web and software development"
+          },
+          {
+            question: "5. Which language is NOT natively supported by VS Code?",
+            options: ["JavaScript", "Python", "C++", "Klingon"],
+            answer: "Klingon"
+          },
+          {
+            question: "6. What is the purpose of extensions in VS Code?",
+            options: ["Add visual effects", "Add new functionalities and support for more languages", "Slow down the editor", "Change your hardware"],
+            answer: "Add new functionalities and support for more languages"
+          },
+          {
+            question: "7. Which extension helps with auto-completion and AI-based code suggestions?",
+            options: ["Prettier", "GitLens", "Copilot", "Code Runner"],
+            answer: "Copilot"
+          },
+          {
+            question: "8. What is the shortcut to open the terminal in VS Code?",
+            options: ["Ctrl + Shift + T", "Ctrl + ` (backtick)", "Ctrl + Alt + N", "Ctrl + Q"],
+            answer: "Ctrl + ` (backtick)"
+          },
+          {
+            question: "9. Which extension is useful for formatting code consistently?",
+            options: ["Bracket Pair Colorizer", "Prettier", "Live Server", "IntelliSense"],
+            answer: "Prettier"
+          },
+          {
+            question: "10. Why do developers prefer VS Code over other editors?",
+            options: ["It's lightweight and open source", "It has built-in Git and extension support", "It supports multiple programming languages", "All of the above"],
+            answer: "All of the above"
+          }
+        ]
       }
     ]
   }
