@@ -133,10 +133,8 @@ const QuizPage = () => {
       {gameState === 'registration' && (
         <div className="quiz-card-modern result-view fade-in">
           <User size={60} className="trophy-icon" style={{ color: 'var(--accent)' }} />
-          <h1>Student Registration</h1>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>
-            Please enter your details to start the quiz
-          </p>
+          <h1>Enter your Details and go!!</h1>
+         
           
           <form onSubmit={handleRegistrationSubmit} className="registration-form">
             <div className="form-group">
