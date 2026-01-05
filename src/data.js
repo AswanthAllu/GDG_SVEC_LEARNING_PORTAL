@@ -1,5 +1,4 @@
 // src/data.js
-
 export const courses = [
   {
     id: "web-dev",
@@ -65,6 +64,9 @@ export const courses = [
           }
         ]
       }
+      
+      
+
     ]
   }
 ];

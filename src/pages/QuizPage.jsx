@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { courses } from '../data';
-import { CheckCircle, XCircle, Clock, Trophy, ArrowRight, RefreshCcw } from 'lucide-react';
+import { CheckCircle, XCircle, Clock, Trophy, ArrowRight, RefreshCcw, User, Hash } from 'lucide-react';
+import { submitQuizResultsGET } from '../services/googleSheets';
 
 const QuizPage = () => {
   const { courseId, episodeId } = useParams();
@@ -9,13 +10,50 @@ const QuizPage = () => {
   const episode = course?.episodes.find(e => e.id === parseInt(episodeId));
   const questions = episode?.quiz || [];
 
+  // Check localStorage for existing student info
+  const getStoredStudentInfo = () => {
+    const stored = localStorage.getItem('studentInfo');
+    if (stored) {
+      try {
+        return JSON.parse(stored);
+      } catch (e) {
+        return null;
+      }
+    }
+    return null;
+  };
+
   // STATE
-  const [gameState, setGameState] = useState('playing'); 
+  const [studentInfo, setStudentInfo] = useState(getStoredStudentInfo());
+  const [registrationForm, setRegistrationForm] = useState({
+    name: studentInfo?.name || '',
+    rollNumber: studentInfo?.rollNumber || ''
+  });
+  const [gameState, setGameState] = useState(studentInfo ? 'playing' : 'registration'); 
   const [currentQIndex, setCurrentQIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(600); // 10 mins
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Handle Registration Form Submission
+  const handleRegistrationSubmit = (e) => {
+    e.preventDefault();
+    if (!registrationForm.name.trim() || !registrationForm.rollNumber.trim()) {
+      alert('Please fill in both name and roll number');
+      return;
+    }
+    
+    // Save to localStorage
+    const studentData = {
+      name: registrationForm.name.trim(),
+      rollNumber: registrationForm.rollNumber.trim()
+    };
+    localStorage.setItem('studentInfo', JSON.stringify(studentData));
+    setStudentInfo(studentData);
+    setGameState('playing');
+  };
 
   // --- RETRY LOGIC (Soft Reset) ---
   const handleRetry = () => {
@@ -27,13 +65,37 @@ const QuizPage = () => {
     setGameState('playing'); // Instantly restarts the quiz
   };
 
+  // Submit quiz results to Google Sheets
+  const submitResults = async () => {
+    if (!studentInfo || isSubmitting) return;
+    
+    setIsSubmitting(true);
+    // Only send essential data: name, roll number, episode ID, and final score
+    const quizData = {
+      studentName: studentInfo.name,
+      rollNumber: studentInfo.rollNumber,
+      episodeId: parseInt(episodeId),
+      score: score,
+    };
+
+    try {
+      await submitQuizResultsGET(quizData);
+    } catch (error) {
+      console.error('Failed to submit results:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   // Timer
   useEffect(() => {
     let timer;
     if (gameState === 'playing' && timeLeft > 0) {
       timer = setInterval(() => setTimeLeft((prev) => prev - 1), 1000);
-    } else if (timeLeft === 0) {
+    } else if (timeLeft === 0 && gameState === 'playing') {
       setGameState('result');
+      // Submit results when time runs out
+      submitResults();
     }
     return () => clearInterval(timer);
   }, [gameState, timeLeft]);
@@ -53,6 +115,8 @@ const QuizPage = () => {
       setIsAnswered(false);
     } else {
       setGameState('result');
+      // Submit results when quiz completes
+      submitResults();
     }
   };
 
@@ -64,6 +128,53 @@ const QuizPage = () => {
 
   return (
     <div className="quiz-page-wrapper">
+      
+      {/* 0. REGISTRATION SCREEN */}
+      {gameState === 'registration' && (
+        <div className="quiz-card-modern result-view fade-in">
+          <User size={60} className="trophy-icon" style={{ color: 'var(--accent)' }} />
+          <h1>Student Registration</h1>
+          <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>
+            Please enter your details to start the quiz
+          </p>
+          
+          <form onSubmit={handleRegistrationSubmit} className="registration-form">
+            <div className="form-group">
+              <label htmlFor="studentName">
+                <User size={18} /> Full Name
+              </label>
+              <input
+                type="text"
+                id="studentName"
+                value={registrationForm.name}
+                onChange={(e) => setRegistrationForm({ ...registrationForm, name: e.target.value })}
+                placeholder="Enter your full name"
+                required
+                className="form-input"
+              />
+            </div>
+            
+            <div className="form-group">
+              <label htmlFor="rollNumber">
+                <Hash size={18} /> Roll Number
+              </label>
+              <input
+                type="text"
+                id="rollNumber"
+                value={registrationForm.rollNumber}
+                onChange={(e) => setRegistrationForm({ ...registrationForm, rollNumber: e.target.value })}
+                placeholder="Enter your roll number"
+                required
+                className="form-input"
+              />
+            </div>
+            
+            <button type="submit" className="btn-primary-large" style={{ width: '100%', marginTop: '20px' }}>
+              Start Quiz <ArrowRight size={18} />
+            </button>
+          </form>
+        </div>
+      )}
       
       {/* 1. PLAYING SCREEN */}
       {gameState === 'playing' && (
@@ -134,6 +245,20 @@ const QuizPage = () => {
           <Trophy size={80} className="trophy-icon" />
           <h1>Quiz Completed!</h1>
           
+          {studentInfo && (
+            <div style={{ 
+              background: 'rgba(100, 255, 218, 0.1)', 
+              padding: '15px', 
+              borderRadius: '8px', 
+              marginBottom: '20px',
+              border: '1px solid rgba(100, 255, 218, 0.2)'
+            }}>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                <strong style={{ color: 'var(--accent)' }}>Student:</strong> {studentInfo.name} ({studentInfo.rollNumber})
+              </p>
+            </div>
+          )}
+          
           <div className="score-box">
             <div className="score-circle">
               <span>{Math.round((score / questions.length) * 100)}%</span>
@@ -141,9 +266,15 @@ const QuizPage = () => {
             <p>You scored <strong>{score}</strong> out of <strong>{questions.length}</strong></p>
           </div>
 
+          {isSubmitting && (
+            <p style={{ color: 'var(--accent)', marginBottom: '20px', fontSize: '0.9rem' }}>
+              Submitting results...
+            </p>
+          )}
+
           <div className="result-buttons">
             {/* UPDATED RETRY BUTTON */}
-            <button onClick={handleRetry} className="btn-primary-large">
+            <button onClick={handleRetry} className="btn-primary-large" disabled={isSubmitting}>
               <RefreshCcw size={18} /> Retry
             </button>
             <Link to={`/series/${courseId}`} className="btn-secondary-large">
