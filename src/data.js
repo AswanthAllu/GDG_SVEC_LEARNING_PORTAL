@@ -179,6 +179,64 @@ export const courses = [
             answer: "All of the above"
           }
         ]
+      },
+      {
+        id: 4,
+        title: "Introduction to Web Development",
+        desc: "Learn the basics of web development and insights into how the web works.",
+        videoUrl: "https://mega.nz/embed/jfZ02ARR#nUiXgjYtshwsUnw4qJnKXrxksDOpJv98tJl7dsISr-Y",
+        quiz: [
+          {
+            question: "1. How do you create a new file in VS Code?",
+            options: ["Right-click", "Ctrl + N", "File > New", "All"],
+            answer: "All"
+          },
+          {
+            question: "2. What is the correct file extension for a CSS file?",
+            options: [".htm", ".cs", ".css", ".style"],
+            answer: ".css"
+          },
+          {
+            question: "3. Which language is used to structure the content of a webpage?",
+            options: ["CSS", "JS", "HTML", "Python"],
+            answer: "HTML"
+          },
+          {
+            question: "4. Which tag has both a start and end tag?",
+            options: ["paragraph", "heading", "image", "button"],
+            answer: "image"
+          },
+          {
+            question: "5. What is the use of the <p> tag?",
+            options: ["Image", "Heading", "Paragraph", "List"],
+            answer: "Paragraph"
+          },
+          {
+            question: "6. Which CSS selector targets a class?",
+            options: ["#", ".", "/", "*"],
+            answer: "."
+          },
+          {
+            question: "7. How do you set the height and width of an image in CSS?",
+            options: ["size", "scale", "img-size", "height & width"],
+            answer: "height & width"
+          },
+          {
+            question: "8. What is the purpose of the class attribute?",
+            options: ["Style", "Script", "Link", "Form"],
+            answer: "Style"
+          },
+          {
+            question: "9. How to change background color in CSS?",
+            options: ["bg", "bg-color", "background-color", "back-color"],
+            answer: "background-color"
+          },
+          {
+            question: "10. Which applies style on hover?",
+            options: [":click", ":hover", ":focus", ":enter"],
+            answer: ":hover"
+          }
+        ]
       }
       
       
