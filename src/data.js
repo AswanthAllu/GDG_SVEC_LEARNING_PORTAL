@@ -325,58 +325,78 @@ export const courses = [
         "id": 6,
         "title": "VS Code Quiz & Video Session",
         "desc": "Quiz session for VS Code fundamentals with timed assessment.",
-        "videoUrl": "https://mega.nz/embed/jfZ02ARR#nUiXgjYtshwsUnw4qJnKXrxksDOpJv98tJl7dsISr-Y",
+        "videoUrl": "https://mega.nz/embed/3HgRGIBI#0VSW90MIgoPr-gQFnXsMuv3bGKiXC_uECfNQAP6LbWoY",
         "quiz": [
           {
-            "question": "1. How do you create a new file in VS Code?",
-            "options": ["Right-click", "Ctrl + N", "File > New", "All"],
-            "answer": "All"
-          },
-          {
-            "question": "2. What is the correct file extension for a CSS file?",
-            "options": [".htm", ".cs", ".css", ".style"],
-            "answer": ".css"
-          },
-          {
-            "question": "3. Which language is used to structure the content of a webpage?",
-            "options": ["CSS", "JS", "HTML", "Python"],
-            "answer": "HTML"
-          },
-          {
-            "question": "4. Which tag has both a start and end tag?",
-            "options": ["paragraph", "heading", "image", "button"],
-            "answer": "image"
-          },
-          {
-            "question": "5. What is the use of the <p> tag?",
-            "options": ["Image", "Heading", "Paragraph", "List"],
-            "answer": "Paragraph"
-          },
-          {
-            "question": "6. Which CSS selector targets a class?",
-            "options": ["#", ".", "/", "*"],
-            "answer": "."
-          },
-          {
-            "question": "7. How do you set the height and width of an image in CSS?",
-            "options": ["size", "scale", "img-size", "height & width"],
-            "answer": "height & width"
-          },
-          {
-            "question": "8. What is the purpose of the class attribute?",
-            "options": ["Style", "Script", "Link", "Form"],
-            "answer": "Style"
-          },
-          {
-            "question": "9. How to change background color in CSS?",
-            "options": ["bg", "bg-color", "background-color", "back-color"],
-            "answer": "background-color"
-          },
-          {
-            "question": "10. Which applies style on hover?",
-            "options": [":click", ":hover", ":focus", ":enter"],
-            "answer": ":hover"
-          }
+        question: "1. What does the 'display: flex' property do in CSS?",
+        options: ["Defines the document structure", "Aligns elements in a column", "Enables a flex container", "Sets the display mode to block"],
+        answer: "Enables a flex container"
+    },
+    {
+        question: "2. What does the 'justify-content: center' property do in a flex container?",
+        options: [
+            "Aligns items to the top of the container",
+            "Aligns items to the bottom of the container",
+            "Centers items horizontally in the container",
+            "Aligns items vertically in the container"
+        ],
+        answer: "Centers items horizontally in the container"
+    },
+    {
+        question: "3. What does the 'flex-direction' property control in a flex container?",
+        options: [
+            "The spacing between flex items",
+            "The direction of flex items",
+            "The alignment of flex items",
+            "The size of flex items"
+        ],
+        answer: "The direction of flex items"
+    },
+    {
+        question: "4. Which direction is the 'main axis' in a flex container when 'flex-direction' is set to 'row'?",
+        options: ["Vertical", "Horizontal", "Diagonal", "Not defined"],
+        answer: "Horizontal"
+    },
+    {
+        question: "5. When 'flex-direction' is set to 'column', which axis is the 'main axis'?",
+        options: ["Horizontal", "Vertical", "Diagonal", "Z-axis"],
+        answer: "Vertical"
+    },
+    {
+        question: "6. In a flex container, which axis is referred to as the 'cross axis'?",
+        options: ["Perpendicular to the main axis", "The main axis itself", "Diagonal axis", "Z-axis"],
+        answer: "Perpendicular to the main axis"
+    },
+    {
+        question: "7. What is the default value of 'flex-direction' in a flex container?",
+        options: ["row", "column", "row-reverse", "column-reverse"],
+        answer: "row"
+    },
+    {
+        question: "8. Which of the following values for 'justify-content' aligns items at the start of the main axis?",
+        options: ["center", "flex-start", "flex-end", "space-between"],
+        answer: "flex-start"
+    },
+    {
+        question: "9. If you set 'flex-direction: column-reverse', how will the items be aligned?",
+        options: [
+            "From top to bottom",
+            "From bottom to top",
+            "Horizontally from left to right",
+            "Vertically from top to bottom but reversed"
+        ],
+        answer: "From bottom to top"
+    },
+    {
+        question: "10. What will happen if you set 'justify-content: space-between' in a flex container?",
+        options: [
+            "Items will be aligned at the start and end of the container",
+            "Items will be centered with equal space between them",
+            "Items will be aligned at the start of the container with equal space",
+            "Items will be aligned at the center of the container"
+        ],
+        answer: "Items will be aligned at the start and end of the container"
+    }
         ]
       }
     ]
