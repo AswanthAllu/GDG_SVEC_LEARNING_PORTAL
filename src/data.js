@@ -328,75 +328,183 @@ export const courses = [
         "videoUrl": "https://mega.nz/embed/3HgRGIBI#0VSW90MIgoPr-gQFnXsMuv3bGKiXC_uECfNQAP6LbWoY",
         "quiz": [
           {
-        question: "1. What does the 'display: flex' property do in CSS?",
-        options: ["Defines the document structure", "Aligns elements in a column", "Enables a flex container", "Sets the display mode to block"],
-        answer: "Enables a flex container"
-    },
-    {
-        question: "2. What does the 'justify-content: center' property do in a flex container?",
-        options: [
-            "Aligns items to the top of the container",
-            "Aligns items to the bottom of the container",
-            "Centers items horizontally in the container",
-            "Aligns items vertically in the container"
-        ],
-        answer: "Centers items horizontally in the container"
-    },
-    {
-        question: "3. What does the 'flex-direction' property control in a flex container?",
-        options: [
-            "The spacing between flex items",
-            "The direction of flex items",
-            "The alignment of flex items",
-            "The size of flex items"
-        ],
-        answer: "The direction of flex items"
-    },
-    {
-        question: "4. Which direction is the 'main axis' in a flex container when 'flex-direction' is set to 'row'?",
-        options: ["Vertical", "Horizontal", "Diagonal", "Not defined"],
-        answer: "Horizontal"
-    },
-    {
-        question: "5. When 'flex-direction' is set to 'column', which axis is the 'main axis'?",
-        options: ["Horizontal", "Vertical", "Diagonal", "Z-axis"],
-        answer: "Vertical"
-    },
-    {
-        question: "6. In a flex container, which axis is referred to as the 'cross axis'?",
-        options: ["Perpendicular to the main axis", "The main axis itself", "Diagonal axis", "Z-axis"],
-        answer: "Perpendicular to the main axis"
-    },
-    {
-        question: "7. What is the default value of 'flex-direction' in a flex container?",
-        options: ["row", "column", "row-reverse", "column-reverse"],
-        answer: "row"
-    },
-    {
-        question: "8. Which of the following values for 'justify-content' aligns items at the start of the main axis?",
-        options: ["center", "flex-start", "flex-end", "space-between"],
-        answer: "flex-start"
-    },
-    {
-        question: "9. If you set 'flex-direction: column-reverse', how will the items be aligned?",
-        options: [
-            "From top to bottom",
-            "From bottom to top",
-            "Horizontally from left to right",
-            "Vertically from top to bottom but reversed"
-        ],
-        answer: "From bottom to top"
-    },
-    {
-        question: "10. What will happen if you set 'justify-content: space-between' in a flex container?",
-        options: [
-            "Items will be aligned at the start and end of the container",
-            "Items will be centered with equal space between them",
-            "Items will be aligned at the start of the container with equal space",
-            "Items will be aligned at the center of the container"
-        ],
-        answer: "Items will be aligned at the start and end of the container"
-    }
+            "question": "1. What does the 'display: flex' property do in CSS?",
+            "options": ["Defines the document structure", "Aligns elements in a column", "Enables a flex container", "Sets the display mode to block"],
+            "answer": "Enables a flex container"
+          },
+          {
+            "question": "2. What does the 'justify-content: center' property do in a flex container?",
+            "options": [
+                "Aligns items to the top of the container",
+                "Aligns items to the bottom of the container",
+                "Centers items horizontally in the container",
+                "Aligns items vertically in the container"
+            ],
+            "answer": "Centers items horizontally in the container"
+          },
+          {
+            "question": "3. What does the 'flex-direction' property control in a flex container?",
+            "options": [
+                "The spacing between flex items",
+                "The direction of flex items",
+                "The alignment of flex items",
+                "The size of flex items"
+            ],
+            "answer": "The direction of flex items"
+          },
+          {
+            "question": "4. Which direction is the 'main axis' in a flex container when 'flex-direction' is set to 'row'?",
+            "options": ["Vertical", "Horizontal", "Diagonal", "Not defined"],
+            "answer": "Horizontal"
+          },
+          {
+            "question": "5. When 'flex-direction' is set to 'column', which axis is the 'main axis'?",
+            "options": ["Horizontal", "Vertical", "Diagonal", "Z-axis"],
+            "answer": "Vertical"
+          },
+          {
+            "question": "6. In a flex container, which axis is referred to as the 'cross axis'?",
+            "options": ["Perpendicular to the main axis", "The main axis itself", "Diagonal axis", "Z-axis"],
+            "answer": "Perpendicular to the main axis"
+          },
+          {
+            "question": "7. What is the default value of 'flex-direction' in a flex container?",
+            "options": ["row", "column", "row-reverse", "column-reverse"],
+            "answer": "row"
+          },
+          {
+            "question": "8. Which of the following values for 'justify-content' aligns items at the start of the main axis?",
+            "options": ["center", "flex-start", "flex-end", "space-between"],
+            "answer": "flex-start"
+          },
+          {
+            "question": "9. If you set 'flex-direction: column-reverse', how will the items be aligned?",
+            "options": [
+                "From top to bottom",
+                "From bottom to top",
+                "Horizontally from left to right",
+                "Vertically from top to bottom but reversed"
+            ],
+            "answer": "From bottom to top"
+          },
+          {
+            "question": "10. What will happen if you set 'justify-content: space-between' in a flex container?",
+            "options": [
+                "Items will be aligned at the start and end of the container",
+                "Items will be centered with equal space between them",
+                "Items will be aligned at the start of the container with equal space",
+                "Items will be aligned at the center of the container"
+            ],
+            "answer": "Items will be aligned at the start and end of the container"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Flexbox + Bootstrap Concepts",
+        "desc": "Additional session with Flexbox and Bootstrap concepts.",
+        "videoUrl": "https://mega.nz/embed/uOYSTaoD#FyZ8oEeLcuEy_7CW-OPi5ulC6MjhrgeS7xI-41q7C4k",
+        "quiz": [
+          {
+            "question": "1. What does 'display: flex' do in CSS?",
+            "options": [
+                "Creates a grid layout",
+                "Makes the container a flex container",
+                "Applies inline styles",
+                "Creates a fixed layout"
+            ],
+            "answer": "Makes the container a flex container"
+          },
+          {
+            "question": "2. Which property aligns flex items along the main axis?",
+            "options": [
+                "align-items",
+                "justify-content",
+                "flex-wrap",
+                "align-content"
+            ],
+            "answer": "justify-content"
+          },
+          {
+            "question": "3. Which property changes the direction of flex items?",
+            "options": [
+                "flex-direction",
+                "flex-align",
+                "justify-items",
+                "order"
+            ],
+            "answer": "flex-direction"
+          },
+          {
+            "question": "4. What does 'align-items: center' do in a flex container?",
+            "options": [
+                "Aligns items to the top",
+                "Aligns items to the bottom",
+                "Aligns items along the cross axis center",
+                "Aligns items horizontally"
+            ],
+            "answer": "Aligns items along the cross axis center"
+          },
+          {
+            "question": "5. What is Bootstrap primarily used for?",
+            "options": [
+                "Image compression",
+                "Database design",
+                "Creating responsive web pages quickly",
+                "Audio editing"
+            ],
+            "answer": "Creating responsive web pages quickly"
+          },
+          {
+            "question": "6. How do you include Bootstrap in an HTML file?",
+            "options": [
+                "Using a Python import",
+                "Linking to a CDN in the head tag",
+                "Using the `<import>` tag",
+                "Including a JavaScript file"
+            ],
+            "answer": "Linking to a CDN in the head tag"
+          },
+          {
+            "question": "7. What is the class used in Bootstrap for a button?",
+            "options": [
+                "btn-style",
+                "button",
+                "btn",
+                "bootstrap-button"
+            ],
+            "answer": "btn"
+          },
+          {
+            "question": "8. Which class is used to make a Bootstrap button primary?",
+            "options": [
+                "btn-blue",
+                "btn-primary",
+                "button-primary",
+                "btn-main"
+            ],
+            "answer": "btn-primary"
+          },
+          {
+            "question": "9. How can you include Bootstrap Icons in a project?",
+            "options": [
+                "By linking to bootstrapicons.com",
+                "By importing from Font Awesome",
+                "By adding the Bootstrap Icons CDN link",
+                "They come automatically with Bootstrap"
+            ],
+            "answer": "By adding the Bootstrap Icons CDN link"
+          },
+          {
+            "question": "10. Which class is used to show a heart icon using Bootstrap Icons?",
+            "options": [
+                "bi bi-heart",
+                "bootstrap-heart",
+                "icon-heart",
+                "bs-icon-heart"
+            ],
+            "answer": "bi bi-heart"
+          }
         ]
       }
     ]
