@@ -506,6 +506,116 @@ export const courses = [
             "answer": "bi bi-heart"
           }
         ]
+      },
+
+      // NEW 8th Episode ADDED
+      {
+        "id": 8,
+        "title": "Anchor Tags & Advanced Linking Concepts",
+        "desc": "Learn how anchor tags work, how to use `href`, open links in new tabs, and link to emails/phones.",
+        "videoUrl": "https://mega.nz/embed/ubgGkKaL#xJl6tawQ0vTXzelMkpBQ1qD-dwi1PT2iy86klAweQrc",
+        "quiz": [
+          {
+            question: "1. What does the `href` attribute in an anchor tag specify?",
+            options: [
+              "The font style",
+              "The background color",
+              "The URL the link points to",
+              "The image source"
+            ],
+            answer: "The URL the link points to"
+          },
+          {
+            question: "2. Which protocol in `href` is used to link to an email address?",
+            options: [
+              "mail:",
+              "email:",
+              "mailto:",
+              "message:"
+            ],
+            answer: "mailto:"
+          },
+          {
+            question: "3. What happens if you use an invalid `href` value?",
+            options: [
+              "The browser will crash",
+              "It will redirect to the home page",
+              "The link will not work properly",
+              "It will show a pop-up"
+            ],
+            answer: "The link will not work properly"
+          },
+          {
+            question: "4. How do you make a link open in a new tab?",
+            options: [
+              "target='_self'",
+              "href='_new'",
+              "target='_blank'",
+              "link='_blank'"
+            ],
+            answer: "target='_blank'"
+          },
+          {
+            question: "5. Which href value can be used to trigger a file download?",
+            options: [
+              "href='file.txt'",
+              "href='file.pdf' download",
+              "href='download://file'",
+              "href='download=true'"
+            ],
+            answer: "href='file.pdf' download"
+          },
+          {
+            question: "6. Which attribute defines the relationship between the current document and the linked one?",
+            options: [
+              "rel",
+              "src",
+              "target",
+              "type"
+            ],
+            answer: "rel"
+          },
+          {
+            question: "7. What’s the default behavior of an anchor tag when clicked with a valid href?",
+            options: [
+              "It opens a dropdown",
+              "It navigates to the given link",
+              "It submits a form",
+              "It refreshes the page"
+            ],
+            answer: "It navigates to the given link"
+          },
+          {
+            question: "8. Which href value is commonly used to link to the top of the page?",
+            options: [
+              "#",
+              "/top",
+              "#top",
+              "top.html"
+            ],
+            answer: "#"
+          },
+          {
+            question: "9. How can you link to a specific section within the same page?",
+            options: [
+              "Use `href='/section'`",
+              "Use `href='#sectionID'`",
+              "Use `src='#section'`",
+              "Use `url='#section'`"
+            ],
+            answer: "Use `href='#sectionID'`"
+          },
+          {
+            question: "10. Which protocol in `href` is used to link to a phone number?",
+            options: [
+              "callto:",
+              "tel:",
+              "phone:",
+              "mobile:"
+            ],
+            answer: "tel:"
+          }
+        ]
       }
     ]
   }
