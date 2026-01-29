@@ -10,7 +10,7 @@ export const courses = [
         "id": 1,
         "title": "Introduction to Web Development",
         "desc": "Learn the basics of web development and insights into how the web works.",
-        "videoUrl": "https://mega.nz/embed/XP4n2DbS#pRrkK2YWXYQC1hL_5teqvAAtzBqPBTMadPQvFGIpal",
+        "videoUrl": "https://mega.nz/embed/XP4n2DbS#pRrkK2YWXYQC1hL_5teqvAAtzBqPBTMadPQvFGIpalA",
         "quiz": [
           {
             "question": "1. What is Web Development?",
