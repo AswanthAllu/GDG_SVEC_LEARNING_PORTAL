@@ -276,12 +276,7 @@ export const courses = [
           },
           {
             "question": "6. What does text-align: center do?",
-            "options": [
-              "Aligns text to the left",
-              "Aligns text to the right",
-              "Centers the text",
-              "Justifies the text"
-            ],
+            "options": ["Aligns text to the left", "Aligns text to the right", "Centers the text", "Justifies the text"],
             "answer": "Centers the text"
           },
           {
@@ -291,12 +286,7 @@ export const courses = [
           },
           {
             "question": "8. What does border-radius do in CSS?",
-            "options": [
-              "Changes border color",
-              "Makes border visible",
-              "Rounds the corners",
-              "Adds padding"
-            ],
+            "options": ["Changes border color", "Makes border visible", "Rounds the corners", "Adds padding"],
             "answer": "Rounds the corners"
           },
           {
@@ -335,20 +325,20 @@ export const courses = [
           {
             "question": "2. What does the 'justify-content: center' property do in a flex container?",
             "options": [
-                "Aligns items to the top of the container",
-                "Aligns items to the bottom of the container",
-                "Centers items horizontally in the container",
-                "Aligns items vertically in the container"
+              "Aligns items to the top of the container",
+              "Aligns items to the bottom of the container",
+              "Centers items horizontally in the container",
+              "Aligns items vertically in the container"
             ],
             "answer": "Centers items horizontally in the container"
           },
           {
             "question": "3. What does the 'flex-direction' property control in a flex container?",
             "options": [
-                "The spacing between flex items",
-                "The direction of flex items",
-                "The alignment of flex items",
-                "The size of flex items"
+              "The spacing between flex items",
+              "The direction of flex items",
+              "The alignment of flex items",
+              "The size of flex items"
             ],
             "answer": "The direction of flex items"
           },
@@ -373,29 +363,13 @@ export const courses = [
             "answer": "row"
           },
           {
-            "question": "8. Which of the following values for 'justify-content' aligns items at the start of the main axis?",
-            "options": ["center", "flex-start", "flex-end", "space-between"],
-            "answer": "flex-start"
+            "question": "8. Which of the following values for 'justify-content' aligns items at the start of the main axis?","options":["center","flex-start","flex-end","space-between"],"answer":"flex-start"
           },
           {
-            "question": "9. If you set 'flex-direction: column-reverse', how will the items be aligned?",
-            "options": [
-                "From top to bottom",
-                "From bottom to top",
-                "Horizontally from left to right",
-                "Vertically from top to bottom but reversed"
-            ],
-            "answer": "From bottom to top"
+            "question": "9. If you set 'flex-direction: column-reverse', how will the items be aligned?","options":["From top to bottom","From bottom to top","Horizontally from left to right","Vertically from top to bottom but reversed"],"answer":"From bottom to top"
           },
           {
-            "question": "10. What will happen if you set 'justify-content: space-between' in a flex container?",
-            "options": [
-                "Items will be aligned at the start and end of the container",
-                "Items will be centered with equal space between them",
-                "Items will be aligned at the start of the container with equal space",
-                "Items will be aligned at the center of the container"
-            ],
-            "answer": "Items will be aligned at the start and end of the container"
+            "question": "10. What will happen if you set 'justify-content: space-between' in a flex container?","options":["Items will be aligned at the start and end of the container","Items will be centered with equal space between them","Items will be aligned at the start of the container with equal space","Items will be aligned at the center of the container"],"answer":"Items will be aligned at the start and end of the container"
           }
         ]
       },
@@ -407,108 +381,56 @@ export const courses = [
         "quiz": [
           {
             "question": "1. What does 'display: flex' do in CSS?",
-            "options": [
-                "Creates a grid layout",
-                "Makes the container a flex container",
-                "Applies inline styles",
-                "Creates a fixed layout"
-            ],
+            "options": ["Creates a grid layout", "Makes the container a flex container", "Applies inline styles", "Creates a fixed layout"],
             "answer": "Makes the container a flex container"
           },
           {
             "question": "2. Which property aligns flex items along the main axis?",
-            "options": [
-                "align-items",
-                "justify-content",
-                "flex-wrap",
-                "align-content"
-            ],
+            "options": ["align-items", "justify-content", "flex-wrap", "align-content"],
             "answer": "justify-content"
           },
           {
             "question": "3. Which property changes the direction of flex items?",
-            "options": [
-                "flex-direction",
-                "flex-align",
-                "justify-items",
-                "order"
-            ],
+            "options": ["flex-direction", "flex-align", "justify-items", "order"],
             "answer": "flex-direction"
           },
           {
             "question": "4. What does 'align-items: center' do in a flex container?",
-            "options": [
-                "Aligns items to the top",
-                "Aligns items to the bottom",
-                "Aligns items along the cross axis center",
-                "Aligns items horizontally"
-            ],
+            "options": ["Aligns items to the top", "Aligns items to the bottom", "Aligns items along the cross axis center", "Aligns items horizontally"],
             "answer": "Aligns items along the cross axis center"
           },
           {
             "question": "5. What is Bootstrap primarily used for?",
-            "options": [
-                "Image compression",
-                "Database design",
-                "Creating responsive web pages quickly",
-                "Audio editing"
-            ],
+            "options": ["Image compression", "Database design", "Creating responsive web pages quickly", "Audio editing"],
             "answer": "Creating responsive web pages quickly"
           },
           {
             "question": "6. How do you include Bootstrap in an HTML file?",
-            "options": [
-                "Using a Python import",
-                "Linking to a CDN in the head tag",
-                "Using the `<import>` tag",
-                "Including a JavaScript file"
-            ],
+            "options": ["Using a Python import", "Linking to a CDN in the head tag", "Using the `<import>` tag", "Including a JavaScript file"],
             "answer": "Linking to a CDN in the head tag"
           },
           {
             "question": "7. What is the class used in Bootstrap for a button?",
-            "options": [
-                "btn-style",
-                "button",
-                "btn",
-                "bootstrap-button"
-            ],
+            "options": ["btn-style", "button", "btn", "bootstrap-button"],
             "answer": "btn"
           },
           {
             "question": "8. Which class is used to make a Bootstrap button primary?",
-            "options": [
-                "btn-blue",
-                "btn-primary",
-                "button-primary",
-                "btn-main"
-            ],
+            "options": ["btn-blue", "btn-primary", "button-primary", "btn-main"],
             "answer": "btn-primary"
           },
           {
             "question": "9. How can you include Bootstrap Icons in a project?",
-            "options": [
-                "By linking to bootstrapicons.com",
-                "By importing from Font Awesome",
-                "By adding the Bootstrap Icons CDN link",
-                "They come automatically with Bootstrap"
-            ],
+            "options": ["By linking to bootstrapicons.com", "By importing from Font Awesome", "By adding the Bootstrap Icons CDN link", "They come automatically with Bootstrap"],
             "answer": "By adding the Bootstrap Icons CDN link"
           },
           {
             "question": "10. Which class is used to show a heart icon using Bootstrap Icons?",
-            "options": [
-                "bi bi-heart",
-                "bootstrap-heart",
-                "icon-heart",
-                "bs-icon-heart"
-            ],
+            "options": ["bi bi-heart", "bootstrap-heart", "icon-heart", "bs-icon-heart"],
             "answer": "bi bi-heart"
           }
         ]
       },
-
-      // NEW 8th Episode ADDED
       {
         "id": 8,
         "title": "Anchor Tags & Advanced Linking Concepts",
@@ -516,107 +438,116 @@ export const courses = [
         "videoUrl": "https://mega.nz/embed/ubgGkKaL#xJl6tawQ0vTXzelMkpBQ1qD-dwi1PT2iy86klAweQrc",
         "quiz": [
           {
-            question: "1. What does the `href` attribute in an anchor tag specify?",
-            options: [
-              "The font style",
-              "The background color",
-              "The URL the link points to",
-              "The image source"
-            ],
-            answer: "The URL the link points to"
+            "question": "1. What does the `href` attribute in an anchor tag specify?",
+            "options": ["The font style", "The background color", "The URL the link points to", "The image source"],
+            "answer": "The URL the link points to"
           },
           {
-            question: "2. Which protocol in `href` is used to link to an email address?",
-            options: [
-              "mail:",
-              "email:",
-              "mailto:",
-              "message:"
-            ],
-            answer: "mailto:"
+            "question": "2. Which protocol in `href` is used to link to an email address?",
+            "options": ["mail:", "email:", "mailto:", "message:"],
+            "answer": "mailto:"
           },
           {
-            question: "3. What happens if you use an invalid `href` value?",
-            options: [
-              "The browser will crash",
-              "It will redirect to the home page",
-              "The link will not work properly",
-              "It will show a pop-up"
-            ],
-            answer: "The link will not work properly"
+            "question": "3. What happens if you use an invalid `href` value?",
+            "options": ["The browser will crash", "It will redirect to the home page", "The link will not work properly", "It will show a pop-up"],
+            "answer": "The link will not work properly"
           },
           {
-            question: "4. How do you make a link open in a new tab?",
-            options: [
-              "target='_self'",
-              "href='_new'",
-              "target='_blank'",
-              "link='_blank'"
-            ],
-            answer: "target='_blank'"
+            "question": "4. How do you make a link open in a new tab?",
+            "options": ["target='_self'", "href='_new'", "target='_blank'", "link='_blank'"],
+            "answer": "target='_blank'"
           },
           {
-            question: "5. Which href value can be used to trigger a file download?",
-            options: [
-              "href='file.txt'",
-              "href='file.pdf' download",
-              "href='download://file'",
-              "href='download=true'"
-            ],
-            answer: "href='file.pdf' download"
+            "question": "5. Which href value can be used to trigger a file download?",
+            "options": ["href='file.txt'", "href='file.pdf' download", "href='download://file'", "href='download=true'"],
+            "answer": "href='file.pdf' download"
           },
           {
-            question: "6. Which attribute defines the relationship between the current document and the linked one?",
-            options: [
-              "rel",
-              "src",
-              "target",
-              "type"
-            ],
-            answer: "rel"
+            "question": "6. Which attribute defines the relationship between the current document and the linked one?",
+            "options": ["rel", "src", "target", "type"],
+            "answer": "rel"
           },
           {
-            question: "7. What’s the default behavior of an anchor tag when clicked with a valid href?",
-            options: [
-              "It opens a dropdown",
-              "It navigates to the given link",
-              "It submits a form",
-              "It refreshes the page"
-            ],
-            answer: "It navigates to the given link"
+            "question": "7. What’s the default behavior of an anchor tag when clicked with a valid href?",
+            "options": ["It opens a dropdown", "It navigates to the given link", "It submits a form", "It refreshes the page"],
+            "answer": "It navigates to the given link"
           },
           {
-            question: "8. Which href value is commonly used to link to the top of the page?",
-            options: [
-              "#",
-              "/top",
-              "#top",
-              "top.html"
-            ],
-            answer: "#"
+            "question": "8. Which href value is commonly used to link to the top of the page?",
+            "options": ["#", "/top", "#top", "top.html"],
+            "answer": "#"
           },
           {
-            question: "9. How can you link to a specific section within the same page?",
-            options: [
-              "Use `href='/section'`",
-              "Use `href='#sectionID'`",
-              "Use `src='#section'`",
-              "Use `url='#section'`"
-            ],
-            answer: "Use `href='#sectionID'`"
+            "question": "9. How can you link to a specific section within the same page?",
+            "options": ["Use `href='/section'`", "Use `href='#sectionID'`", "Use `src='#section'`", "Use `url='#section'`"],
+            "answer": "Use `href='#sectionID'`"
           },
           {
-            question: "10. Which protocol in `href` is used to link to a phone number?",
-            options: [
-              "callto:",
-              "tel:",
-              "phone:",
-              "mobile:"
-            ],
-            answer: "tel:"
+            "question": "10. Which protocol in `href` is used to link to a phone number?",
+            "options": ["callto:", "tel:", "phone:", "mobile:"],
+            "answer": "tel:"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Git, GitHub & Deployment Essentials",
+        "desc": "Learn Git, GitHub, repositories, and deployment workflows.",
+        "videoUrl": "https://mega.nz/embed/nddEnZZb#NpRB_lLf6wRPvHKGIev_GFxprv7Sctn39X41E0ogVzY",
+        "quiz": [
+          {
+            "question": "1. What does the command `git init` do?",
+            "options": ["Clones a remote repository", "Initializes a new Git repository", "Creates a new branch", "Pushes changes to GitHub"],
+            "answer": "Initializes a new Git repository"
+          },
+          {
+            "question": "2. What is a GitHub repository?",
+            "options": ["A text editor", "A remote storage of code and version history", "A database service", "A build tool"],
+            "answer": "A remote storage of code and version history"
+          },
+          {
+            "question": "3. Which Git command downloads a remote repository to your local machine?",
+            "options": ["git push", "git pull", "git clone", "git fetch"],
+            "answer": "git clone"
+          },
+          {
+            "question": "4. What is the purpose of a `.gitignore` file?",
+            "options": ["To ignore merge conflicts", "To exclude specified files from version control", "To list branches", "To track commits"],
+            "answer": "To exclude specified files from version control"
+          },
+          {
+            "question": "5. Which of the following commands stages all changed files for commit?",
+            "options": ["git commit -m", "git add .", "git stage", "git track"],
+            "answer": "git add ."
+          },
+          {
+            "question": "6. What does `git push origin main` do?",
+            "options": ["Updates your local repository", "Uploads local commits to the main branch on the remote repository", "Creates a new local branch", "Deletes the remote repository"],
+            "answer": "Uploads local commits to the main branch on the remote repository"
+          },
+          {
+            "question": "7. When deploying an application, why is version control important?",
+            "options": ["It writes code automatically", "It tracks and manages changes over time", "It increases application speed", "It styles the application"],
+            "answer": "It tracks and manages changes over time"
+          },
+          {
+            "question": "8. Which branch name is commonly used as a production-ready branch?",
+            "options": ["feature", "test", "main or master", "bugfix"],
+            "answer": "main or master"
+          },
+          {
+            "question": "9. What is a pull request on GitHub?",
+            "options": ["A request to delete a repository", "A method for proposing changes to be reviewed before merging", "A way to ignore changes", "A Git command executed in the terminal"],
+            "answer": "A method for proposing changes to be reviewed before merging"
+          },
+          {
+            "question": "10. Which GitHub feature can be used for static website deployment?",
+            "options": ["GitHub Issues", "GitHub Pages", "GitHub Projects", "GitHub Desktop"],
+            "answer": "GitHub Pages"
           }
         ]
       }
     ]
   }
 ];
+
