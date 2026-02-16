@@ -363,13 +363,19 @@ export const courses = [
             "answer": "row"
           },
           {
-            "question": "8. Which of the following values for 'justify-content' aligns items at the start of the main axis?","options":["center","flex-start","flex-end","space-between"],"answer":"flex-start"
+            "question": "8. Which of the following values for 'justify-content' aligns items at the start of the main axis?",
+            "options": ["center", "flex-start", "flex-end", "space-between"],
+            "answer": "flex-start"
           },
           {
-            "question": "9. If you set 'flex-direction: column-reverse', how will the items be aligned?","options":["From top to bottom","From bottom to top","Horizontally from left to right","Vertically from top to bottom but reversed"],"answer":"From bottom to top"
+            "question": "9. If you set 'flex-direction: column-reverse', how will the items be aligned?",
+            "options": ["From top to bottom", "From bottom to top", "Horizontally from left to right", "Vertically from top to bottom but reversed"],
+            "answer": "From bottom to top"
           },
           {
-            "question": "10. What will happen if you set 'justify-content: space-between' in a flex container?","options":["Items will be aligned at the start and end of the container","Items will be centered with equal space between them","Items will be aligned at the start of the container with equal space","Items will be aligned at the center of the container"],"answer":"Items will be aligned at the start and end of the container"
+            "question": "10. What will happen if you set 'justify-content: space-between' in a flex container?",
+            "options": ["Items will be aligned at the start and end of the container", "Items will be centered with equal space between them", "Items will be aligned at the start of the container with equal space", "Items will be aligned at the center of the container"],
+            "answer": "Items will be aligned at the start and end of the container"
           }
         ]
       },
@@ -546,8 +552,67 @@ export const courses = [
             "answer": "GitHub Pages"
           }
         ]
+      },
+
+      /* 🔥 New Episode 10 added below 🔥 */
+      {
+        "id": 10,
+        "title": "Vercel Deployment Automation",
+        "desc": "Understand how Vercel integrates with Git to provide automatic, preview, and production deployments.",
+        "videoUrl": "https://mega.nz/embed/W9xy0QSb#mOccDHYOaGjBEWSG5V54jXyiqoBFng2Y4FExPGQYjnQ",
+        "quiz": [
+          {
+            "question": "1. What triggers a deployment on Vercel when your Git repo is connected?",
+            "options": ["Only manual deploy from dashboard", "Every commit push to any branch", "Only pushes to main branch", "Only merge requests"],
+            "answer": "Every commit push to any branch"
+          },
+          {
+            "question": "2. On Vercel, what type of URL is generated for each build before merging to production?",
+            "options": ["Static domain URL", "Preview deployment URL", "Local host URL", "Staging server IP"],
+            "answer": "Preview deployment URL"
+          },
+          {
+            "question": "3. What Git branch is usually configured as the production branch in Vercel?",
+            "options": ["feature", "dev", "main", "test"],
+            "answer": "main"
+          },
+          {
+            "question": "4. Which of the following is NOT a supported Git provider for Vercel automatic deployments?",
+            "options": ["GitHub", "GitLab", "Bitbucket", "Subversion (SVN)"],
+            "answer": "Subversion (SVN)"
+          },
+          {
+            "question": "5. What file can you configure to control advanced Vercel deployment settings?",
+            "options": [".env", "dockerfile", "vercel.json", "index.js"],
+            "answer": "vercel.json"
+          },
+          {
+            "question": "6. If you want to deploy without pushing a commit, which Vercel feature can you use?",
+            "options": ["Deploy Hooks", "Git Revert", "Git Reset", "Branch Delete"],
+            "answer": "Deploy Hooks"
+          },
+          {
+            "question": "7. What does Vercel do when a Git push happens while a previous build is still running?",
+            "options": ["Cancels all builds", "Queues the new build and cancels older one", "Starts builds simultaneously", "Fails immediately"],
+            "answer": "Queues the new build and cancels older one"
+          },
+          {
+            "question": "8. Which command from the Vercel CLI will create a production deployment?",
+            "options": ["vercel build", "vercel --prod", "git push", "npm run deploy"],
+            "answer": "vercel --prod"
+          },
+          {
+            "question": "9. What benefit does Vercel provide for merged pull requests?",
+            "options": ["Deletes the branch", "Creates a unique preview deployment URL", "Only lint checks", "Runs local tests only"],
+            "answer": "Creates a unique preview deployment URL"
+          },
+          {
+            "question": "10. If you want to change which Git branch Vercel treats as production, where do you configure it?",
+            "options": ["In vercel.json only", "In Vercel dashboard Git settings", "In .gitignore", "In package.json"],
+            "answer": "In Vercel dashboard Git settings"
+          }
+        ]
       }
     ]
   }
 ];
-
