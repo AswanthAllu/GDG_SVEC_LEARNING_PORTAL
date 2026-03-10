@@ -614,5 +614,122 @@ export const courses = [
         ]
       }
     ]
+  },
+
+  {
+    id: "responsive-design",
+    title: "Responsive Web Design",
+    description: "Learn how to make websites look great on all screen sizes and devices.",
+    icon: "📱",
+    episodes: [
+      {
+        id: 1,
+        title: "Introduction to Responsive Web Design",
+        desc: "Introduction for Responsive web design.",
+        videoUrl: "https://mega.nz/embed/fshXyQjL#pZ6v0BQreuyIlgP0YV4cxBY-hJb2DLV05q1ISez2I0Q",
+       quiz: [
+          {
+            question: "1. What is the main goal of Responsive Web Design?",
+            options: [
+              "To make sure a website looks good and works well on all devices (desktops, tablets, and phones).",
+              "To make a website load as slowly as possible.",
+              "To write backend database logic.",
+              "To force users to only view the site on a desktop computer."
+            ],
+            answer: "To make sure a website looks good and works well on all devices (desktops, tablets, and phones)."
+          },
+          {
+            question: "2. Which HTML tag is required to control the page's dimensions and scaling on mobile devices?",
+            options: [
+              "<meta name=\"viewport\">",
+              "<title>",
+              "<link rel=\"stylesheet\">",
+              "<script>"
+            ],
+            answer: "<meta name=\"viewport\">"
+          },
+          {
+            question: "3. What is a 'Media Query' in CSS?",
+            options: [
+              "A way to query a database for media files like images and videos.",
+              "A CSS technique used to apply styles only when a specific condition is true (e.g., screen width).",
+              "A JavaScript function to play audio on a webpage.",
+              "An HTML tag used to embed responsive videos."
+            ],
+            answer: "A CSS technique used to apply styles only when a specific condition is true (e.g., screen width)."
+          },
+          {
+            question: "4. What does the 'Mobile-First' approach mean in web development?",
+            options: [
+              "Designing the desktop version first, then shrinking it for mobile.",
+              "Only building websites for mobile phones and ignoring desktops.",
+              "Designing the mobile version of a website first, and then scaling it up for larger screens.",
+              "Developing mobile apps using Java or Swift instead of web technologies."
+            ],
+            answer: "Designing the mobile version of a website first, and then scaling it up for larger screens."
+          },
+          {
+            question: "5. How do you make an image responsive so it never scales larger than its original size but shrinks on smaller screens?",
+            options: [
+              "width: 100px; height: 100px;",
+              "max-width: 100%; height: auto;",
+              "min-width: 100%; height: 100%;",
+              "display: none;"
+            ],
+            answer: "max-width: 100%; height: auto;"
+          },
+          {
+            question: "6. What are 'breakpoints' in responsive design?",
+            options: [
+              "Points where the code breaks and causes an error.",
+              "Specific screen widths where the website's layout changes using media queries.",
+              "The space between text paragraphs.",
+              "The physical buttons on a mobile device."
+            ],
+            answer: "Specific screen widths where the website's layout changes using media queries."
+          },
+          {
+            question: "7. Which of the following is a relative unit commonly used in responsive design?",
+            options: [
+              "Pixels (px)",
+              "Centimeters (cm)",
+              "Percentages (%)",
+              "Inches (in)"
+            ],
+            answer: "Percentages (%)"
+          },
+          {
+            question: "8. Why is responsive web design important for Search Engine Optimization (SEO)?",
+            options: [
+              "Search engines like Google penalize mobile-friendly websites.",
+              "It allows you to hide keywords from users on mobile devices.",
+              "Search engines prioritize mobile-friendly websites in their search results.",
+              "SEO and responsive design are completely unrelated."
+            ],
+            answer: "Search engines prioritize mobile-friendly websites in their search results."
+          },
+          {
+            question: "9. Which modern CSS layout modules are heavily used to build flexible, responsive grid structures?",
+            options: [
+              "HTML Tables",
+              "Flexbox and CSS Grid",
+              "Floats and Clearfixes",
+              "Inline styling"
+            ],
+            answer: "Flexbox and CSS Grid"
+          },
+          {
+            question: "10. What does the term 'Fluid Layout' refer to?",
+            options: [
+              "A layout that uses fixed pixel widths for all elements.",
+              "A layout that uses proportional values like percentages to adapt to the screen size.",
+              "A website design that features water animations.",
+              "A layout that only works on Apple devices."
+            ],
+            answer: "A layout that uses proportional values like percentages to adapt to the screen size."
+          }
+        ]
+      }
+    ]
   }
 ];
