@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { courses } from '../data';
-import { Sparkles, ArrowRight } from 'lucide-react';
+import { Sparkles, ArrowRight, Play } from 'lucide-react';
 
 const Home = () => {
+  const lastWatched = useMemo(() => {
+    try {
+      const raw = localStorage.getItem('gdg:lastWatched');
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) {
+      return null;
+    }
+  }, []);
+
+  const resumeCourse = lastWatched ? courses.find((c) => c.id === lastWatched.courseId) : null;
+  const resumeEpisode =
+    lastWatched && resumeCourse
+      ? resumeCourse.episodes.find((e) => e.id === Number(lastWatched.episodeId))
+      : null;
+
   return (
     <div className="home-wrapper">
       
@@ -20,6 +35,23 @@ const Home = () => {
           Dive into our curated tech series, master new skills, and innovate with code.
         </p>
       </div>
+
+      {/* CONTINUE WATCHING */}
+      {resumeCourse && resumeEpisode && (
+        <div className="resume-strip">
+          <div className="resume-strip-content">
+            <div className="resume-strip-text">
+              <span className="resume-label">Continue Watching</span>
+              <div className="resume-title">
+                {resumeCourse.title} — EP {resumeEpisode.id}: {resumeEpisode.title}
+              </div>
+            </div>
+            <Link to={`/series/${resumeCourse.id}/watch/${resumeEpisode.id}`} className="resume-btn">
+              <Play size={18} /> Resume
+            </Link>
+          </div>
+        </div>
+      )}
 
       {/* CARDS GRID */}
       <div className="course-grid">

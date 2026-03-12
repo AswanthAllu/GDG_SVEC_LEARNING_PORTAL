@@ -4,7 +4,7 @@ import { Linkedin, Github, MessageCircle, Mail } from 'lucide-react';
 export default function Footer() {
   return (
     <footer>
-      <p>© 2025 Designed & Developed by <strong>Aswanth Allu</strong></p>
+      <p>© 2026 Designed & Developed by <strong>Aswanth Allu</strong></p>
       
       <div className="social-icons">
         {/* LinkedIn */}
