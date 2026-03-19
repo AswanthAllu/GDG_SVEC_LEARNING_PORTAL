@@ -108,7 +108,7 @@ export const courses = [
           {
             "question": "8. Which of the following is a correct example of a CSS rule?",
             "options": ["color:red; font-size:32px;", "color = red; font-size = 32px;", "color - red; font-size - 32px;", "color:red font-size:32px;"],
-            "answer": "color:red; font-size:32px"
+            "answer": "color:red; font-size:32px;"
           },
           {
             "question": "9. What does the backend of a website handle?",
@@ -627,7 +627,7 @@ export const courses = [
         title: "Introduction to Responsive Web Design",
         desc: "Introduction for Responsive web design.",
         videoUrl: "https://mega.nz/embed/fshXyQjL#pZ6v0BQreuyIlgP0YV4cxBY-hJb2DLV05q1ISez2I0Q",
-       quiz: [
+        quiz: [
           {
             question: "1. What is the main goal of Responsive Web Design?",
             options: [
@@ -727,6 +727,114 @@ export const courses = [
               "A layout that only works on Apple devices."
             ],
             answer: "A layout that uses proportional values like percentages to adapt to the screen size."
+          }
+        ]
+      },
+      {
+        id: 2,
+        title: "Mobile-First Semantic Layout for LearnSphere",
+        desc: "We build a simple dashboard page for LearnSphere using semantic HTML tags and a mobile-first structure.",
+        videoUrl: "https://mega.nz/embed/q4IExK4T#IDtWsnemhv6sIGrCV8js1-i1u3Opq8Yt0d-OtADPXQQ",
+        quiz: [
+          {
+            question: "1. In a mobile-first layout like the LearnSphere page, how should the main sections typically be arranged in the HTML?",
+            options: [
+              "Header at the top, main content below, footer at the bottom.",
+              "Footer at the top, header at the bottom, main in the middle.",
+              "Main content at the top, header below, footer hidden.",
+              "All sections placed side by side using tables."
+            ],
+            answer: "Header at the top, main content below, footer at the bottom."
+          },
+          {
+            question: "2. Which semantic element is the best choice to wrap the LearnSphere logo or title at the top of the page?",
+            options: [
+              "<main>",
+              "<header>",
+              "<section>",
+              "<article>"
+            ],
+            answer: "<header>"
+          },
+          {
+            question: "3. On the LearnSphere page, the list with items like Dashboard, Courses, Profile, and Settings belongs inside which semantic element?",
+            options: [
+              "<nav>",
+              "<footer>",
+              "<aside>",
+              "<article>"
+            ],
+            answer: "<nav>"
+          },
+          {
+            question: "4. The LearnSphere portal shows information blocks like Students, Courses, and Completion. Which semantic element is most suitable to contain these statistics as the primary content?",
+            options: [
+              "<footer>",
+              "<header>",
+              "<main>",
+              "<nav>"
+            ],
+            answer: "<main>"
+          },
+          {
+            question: "5. In a mobile-first semantic layout, how should the menu (Dashboard, Courses, Profile, Settings) generally appear on small screens?",
+            options: [
+              "Stacked vertically in a simple list so it is easy to tap.",
+              "Hidden completely so only desktop users can see it.",
+              "Displayed in two columns using fixed pixel widths.",
+              "Placed only in the footer for mobile devices."
+            ],
+            answer: "Stacked vertically in a simple list so it is easy to tap."
+          },
+          {
+            question: "6. Which HTML element is the most appropriate wrapper for the LearnSphere footer text or links (for example, copyright or additional info)?",
+            options: [
+              "<section>",
+              "<footer>",
+              "<aside>",
+              "<article>"
+            ],
+            answer: "<footer>"
+          },
+          {
+            question: "7. Why is it a good idea to use headings like <h1>, <h2>, and <h3> for titles such as “LearnSphere”, “Menu”, “Students”, and “Courses”?",
+            options: [
+              "They automatically make the text bold without any CSS.",
+              "They provide a clear content hierarchy for users and screen readers.",
+              "They prevent the page from scrolling on mobile.",
+              "They are required for the page to load in the browser."
+            ],
+            answer: "They provide a clear content hierarchy for users and screen readers."
+          },
+          {
+            question: "8. If you want to group each content block such as Students, Courses, and Completion inside the main area, which semantic element is the best choice?",
+            options: [
+              "<article> for each block, because each is a self-contained piece of content.",
+              "<nav> for each block, because they look like links.",
+              "<aside> for each block, because they are always sidebars.",
+              "<span> for each block, because they are inline elements."
+            ],
+            answer: "<article> for each block, because each is a self-contained piece of content."
+          },
+          {
+            question: "9. In a mobile-first design, which of the following best describes how you should write your base CSS for this LearnSphere layout?",
+            options: [
+              "Write styles for large desktop screens first, then remove rules for smaller screens.",
+              "Write simple styles that look good on small screens first, then add media queries for larger screens.",
+              "Use only inline styles directly on each element.",
+              "Use tables for the layout so that CSS is not needed."
+            ],
+            answer: "Write simple styles that look good on small screens first, then add media queries for larger screens."
+          },
+          {
+            question: "10. To make sure the LearnSphere page scales correctly on mobile devices, which meta tag should be included in the <head> of the HTML document?",
+            options: [
+              "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+              "<meta name=\"viewport\" content=\"desktop-width, initial-scale=2.0\">",
+              "<meta http-equiv=\"refresh\" content=\"30\">",
+              "<meta name=\"keywords\" content=\"LearnSphere, dashboard\">"
+            ],
+            answer: "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
           }
         ]
       }
