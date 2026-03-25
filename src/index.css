@@ -222,6 +222,296 @@ footer {
   margin: 0 auto;
 }
 
+/* --- WATCH PAGE: LAYOUT + PLAYLIST --- */
+.watch-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+  align-items: start;
+}
+
+.cinema-container {
+  width: 100%;
+}
+
+.playlist-toggle {
+  margin-left: auto;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.playlist-toggle:hover {
+  border-color: rgba(100, 255, 218, 0.35);
+  background: rgba(100, 255, 218, 0.08);
+}
+
+.focus-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.focus-toggle:hover {
+  border-color: rgba(100, 255, 218, 0.35);
+  background: rgba(100, 255, 218, 0.08);
+}
+
+.episode-sidebar {
+  position: sticky;
+  top: 90px;
+  background: rgba(17, 34, 64, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  max-height: calc(100vh - 120px);
+}
+
+.episode-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.episode-sidebar-header h3 {
+  font-size: 0.95rem;
+  color: #fff;
+}
+.episode-count {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.episode-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-height: calc(100vh - 170px);
+}
+
+.episode-item {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: 0.2s;
+}
+.episode-item:hover {
+  background: rgba(100, 255, 218, 0.06);
+}
+.episode-item.active {
+  background: rgba(100, 255, 218, 0.12);
+  border-left: 3px solid var(--accent);
+}
+.episode-item-id {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.episode-item-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.88rem;
+  line-height: 1.2;
+}
+
+.video-actions-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Focus mode (watch page) */
+body.focus-mode header,
+body.focus-mode footer {
+  display: none;
+}
+body.focus-mode .watch-page-wrapper {
+  max-width: 1400px;
+  padding-top: 10px;
+}
+body.focus-mode .episode-sidebar {
+  max-height: calc(100vh - 60px);
+}
+body.focus-mode .video-frame-border {
+  box-shadow: 0 0 60px rgba(100, 255, 218, 0.08);
+}
+
+/* Mobile drawer */
+.episode-drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 200;
+  display: flex;
+  justify-content: flex-end;
+}
+.episode-drawer {
+  width: min(92vw, 420px);
+  height: 100%;
+  background: rgba(10, 25, 47, 0.98);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+}
+.episode-drawer-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.episode-drawer-header h3 {
+  color: #fff;
+}
+.drawer-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  cursor: pointer;
+}
+.episode-drawer-list {
+  overflow: auto;
+  padding: 6px;
+}
+
+/* --- EPISODE NOTES --- */
+.notes-card {
+  margin-top: 18px;
+  background: rgba(17, 34, 64, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 14px 16px;
+  backdrop-filter: blur(10px);
+}
+.notes-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.notes-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  color: #fff;
+  font-size: 0.95rem;
+}
+.notes-status {
+  font-size: 0.8rem;
+  color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(100, 255, 218, 0.18);
+  background: rgba(100, 255, 218, 0.08);
+  white-space: nowrap;
+}
+.notes-textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 120px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+.notes-textarea:focus {
+  outline: none;
+  border-color: rgba(100, 255, 218, 0.5);
+  box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.08);
+}
+.notes-hint {
+  margin-top: 10px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+/* --- CONTINUE WATCHING STRIP --- */
+.resume-strip {
+  max-width: 1200px;
+  margin: -20px auto 30px;
+  padding: 0 20px;
+}
+.resume-strip-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(100, 255, 218, 0.12) 0%, rgba(66, 133, 244, 0.06) 100%);
+  border: 1px solid rgba(100, 255, 218, 0.2);
+}
+.resume-label {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.resume-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--accent);
+  color: var(--bg-color);
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.resume-btn:hover {
+  background: #50dcb8;
+}
+
+.timeline-resume {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
 .video-nav-bar {
   display: flex;
   align-items: center;
@@ -253,6 +543,7 @@ footer {
   box-shadow: 0 0 40px rgba(100, 255, 218, 0.05); /* Outer Glow */
   border: 1px solid rgba(100, 255, 218, 0.2);
   margin-bottom: 30px;
+  position: relative;
 }
 
 .video-wrapper {
@@ -325,6 +616,11 @@ footer {
   .video-controls { flex-direction: column; gap: 20px; }
   .quiz-btn-large { width: 100%; justify-content: center; }
   .video-text h1 { font-size: 1.5rem; }
+  .watch-layout { grid-template-columns: 1fr; }
+  .episode-sidebar { display: none; }
+  .playlist-toggle { display: inline-flex; }
+  .resume-strip { margin-top: -10px; }
+  .focus-toggle { display: none; }
 }
 /* --- MODERN QUIZ UI --- */
 .quiz-page-wrapper {
