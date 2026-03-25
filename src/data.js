@@ -108,7 +108,7 @@ export const courses = [
           {
             "question": "8. Which of the following is a correct example of a CSS rule?",
             "options": ["color:red; font-size:32px;", "color = red; font-size = 32px;", "color - red; font-size - 32px;", "color:red font-size:32px;"],
-            "answer": "color:red; font-size:32px"
+            "answer": "color:red; font-size:32px;"
           },
           {
             "question": "9. What does the backend of a website handle?",
@@ -610,6 +610,311 @@ export const courses = [
             "question": "10. If you want to change which Git branch Vercel treats as production, where do you configure it?",
             "options": ["In vercel.json only", "In Vercel dashboard Git settings", "In .gitignore", "In package.json"],
             "answer": "In Vercel dashboard Git settings"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "responsive-design",
+    title: "Responsive Web Design",
+    description: "Learn how to make websites look great on all screen sizes and devices.",
+    icon: "📱",
+    episodes: [
+      {
+        id: 1,
+        title: "Introduction to Responsive Web Design",
+        desc: "Introduction for Responsive web design.",
+        videoUrl: "https://mega.nz/embed/fshXyQjL#pZ6v0BQreuyIlgP0YV4cxBY-hJb2DLV05q1ISez2I0Q",
+        quiz: [
+          {
+            question: "1. What is the main goal of Responsive Web Design?",
+            options: [
+              "To make sure a website looks good and works well on all devices (desktops, tablets, and phones).",
+              "To make a website load as slowly as possible.",
+              "To write backend database logic.",
+              "To force users to only view the site on a desktop computer."
+            ],
+            answer: "To make sure a website looks good and works well on all devices (desktops, tablets, and phones)."
+          },
+          {
+            question: "2. Which HTML tag is required to control the page's dimensions and scaling on mobile devices?",
+            options: [
+              "<meta name=\"viewport\">",
+              "<title>",
+              "<link rel=\"stylesheet\">",
+              "<script>"
+            ],
+            answer: "<meta name=\"viewport\">"
+          },
+          {
+            question: "3. What is a 'Media Query' in CSS?",
+            options: [
+              "A way to query a database for media files like images and videos.",
+              "A CSS technique used to apply styles only when a specific condition is true (e.g., screen width).",
+              "A JavaScript function to play audio on a webpage.",
+              "An HTML tag used to embed responsive videos."
+            ],
+            answer: "A CSS technique used to apply styles only when a specific condition is true (e.g., screen width)."
+          },
+          {
+            question: "4. What does the 'Mobile-First' approach mean in web development?",
+            options: [
+              "Designing the desktop version first, then shrinking it for mobile.",
+              "Only building websites for mobile phones and ignoring desktops.",
+              "Designing the mobile version of a website first, and then scaling it up for larger screens.",
+              "Developing mobile apps using Java or Swift instead of web technologies."
+            ],
+            answer: "Designing the mobile version of a website first, and then scaling it up for larger screens."
+          },
+          {
+            question: "5. How do you make an image responsive so it never scales larger than its original size but shrinks on smaller screens?",
+            options: [
+              "width: 100px; height: 100px;",
+              "max-width: 100%; height: auto;",
+              "min-width: 100%; height: 100%;",
+              "display: none;"
+            ],
+            answer: "max-width: 100%; height: auto;"
+          },
+          {
+            question: "6. What are 'breakpoints' in responsive design?",
+            options: [
+              "Points where the code breaks and causes an error.",
+              "Specific screen widths where the website's layout changes using media queries.",
+              "The space between text paragraphs.",
+              "The physical buttons on a mobile device."
+            ],
+            answer: "Specific screen widths where the website's layout changes using media queries."
+          },
+          {
+            question: "7. Which of the following is a relative unit commonly used in responsive design?",
+            options: [
+              "Pixels (px)",
+              "Centimeters (cm)",
+              "Percentages (%)",
+              "Inches (in)"
+            ],
+            answer: "Percentages (%)"
+          },
+          {
+            question: "8. Why is responsive web design important for Search Engine Optimization (SEO)?",
+            options: [
+              "Search engines like Google penalize mobile-friendly websites.",
+              "It allows you to hide keywords from users on mobile devices.",
+              "Search engines prioritize mobile-friendly websites in their search results.",
+              "SEO and responsive design are completely unrelated."
+            ],
+            answer: "Search engines prioritize mobile-friendly websites in their search results."
+          },
+          {
+            question: "9. Which modern CSS layout modules are heavily used to build flexible, responsive grid structures?",
+            options: [
+              "HTML Tables",
+              "Flexbox and CSS Grid",
+              "Floats and Clearfixes",
+              "Inline styling"
+            ],
+            answer: "Flexbox and CSS Grid"
+          },
+          {
+            question: "10. What does the term 'Fluid Layout' refer to?",
+            options: [
+              "A layout that uses fixed pixel widths for all elements.",
+              "A layout that uses proportional values like percentages to adapt to the screen size.",
+              "A website design that features water animations.",
+              "A layout that only works on Apple devices."
+            ],
+            answer: "A layout that uses proportional values like percentages to adapt to the screen size."
+          }
+        ]
+      },
+            {
+        id: 2,
+        title: "Mobile-First Semantic Layout for LearnSphere",
+        desc: "We build a simple dashboard page for LearnSphere using semantic HTML tags and a mobile-first structure.",
+        videoUrl: "https://mega.nz/embed/q4IExK4T#IDtWsnemhv6sIGrCV8js1-i1u3Opq8Yt0d-OtADPXQQ",
+        quiz: [
+          {
+            question: "1. In a mobile-first layout like the LearnSphere page, how should the main sections typically be arranged in the HTML?",
+            options: [
+              "Header at the top, main content below, footer at the bottom.",
+              "Footer at the top, header at the bottom, main in the middle.",
+              "Main content at the top, header below, footer hidden.",
+              "All sections placed side by side using tables."
+            ],
+            answer: "Header at the top, main content below, footer at the bottom."
+          },
+          {
+            question: "2. Which semantic element is the best choice to wrap the LearnSphere logo or title at the top of the page?",
+            options: [
+              "<main>",
+              "<header>",
+              "<section>",
+              "<article>"
+            ],
+            answer: "<header>"
+          },
+          {
+            question: "3. On the LearnSphere page, the list with items like Dashboard, Courses, Profile, and Settings belongs inside which semantic element?",
+            options: [
+              "<nav>",
+              "<footer>",
+              "<aside>",
+              "<article>"
+            ],
+            answer: "<nav>"
+          },
+          {
+            question: "4. The LearnSphere portal shows information blocks like Students, Courses, and Completion. Which semantic element is most suitable to contain these statistics as the primary content?",
+            options: [
+              "<footer>",
+              "<header>",
+              "<main>",
+              "<nav>"
+            ],
+            answer: "<main>"
+          },
+          {
+            question: "5. In a mobile-first semantic layout, how should the menu (Dashboard, Courses, Profile, Settings) generally appear on small screens?",
+            options: [
+              "Stacked vertically in a simple list so it is easy to tap.",
+              "Hidden completely so only desktop users can see it.",
+              "Displayed in two columns using fixed pixel widths.",
+              "Placed only in the footer for mobile devices."
+            ],
+            answer: "Stacked vertically in a simple list so it is easy to tap."
+          },
+          {
+            question: "6. Which HTML element is the most appropriate wrapper for the LearnSphere footer text or links (for example, copyright or additional info)?",
+            options: [
+              "<section>",
+              "<footer>",
+              "<aside>",
+              "<article>"
+            ],
+            answer: "<footer>"
+          },
+          {
+            question: "7. Why is it a good idea to use headings like <h1>, <h2>, and <h3> for titles such as “LearnSphere”, “Menu”, “Students”, and “Courses”?",
+            options: [
+              "They automatically make the text bold without any CSS.",
+              "They provide a clear content hierarchy for users and screen readers.",
+              "They prevent the page from scrolling on mobile.",
+              "They are required for the page to load in the browser."
+            ],
+            answer: "They provide a clear content hierarchy for users and screen readers."
+          },
+          {
+            question: "8. If you want to group each content block such as Students, Courses, and Completion inside the main area, which semantic element is the best choice?",
+            options: [
+              "<article> for each block, because each is a self-contained piece of content.",
+              "<nav> for each block, because they look like links.",
+              "<aside> for each block, because they are always sidebars.",
+              "<span> for each block, because they are inline elements."
+            ],
+            answer: "<article> for each block, because each is a self-contained piece of content."
+          },
+          {
+            question: "9. In a mobile-first design, which of the following best describes how you should write your base CSS for this LearnSphere layout?",
+            options: [
+              "Write styles for large desktop screens first, then remove rules for smaller screens.",
+              "Write simple styles that look good on small screens first, then add media queries for larger screens.",
+              "Use only inline styles directly on each element.",
+              "Use tables for the layout so that CSS is not needed."
+            ],
+            answer: "Write simple styles that look good on small screens first, then add media queries for larger screens."
+          },
+          {
+            question: "10. To make sure the LearnSphere page scales correctly on mobile devices, which meta tag should be included in the <head> of the HTML document?",
+            options: [
+              "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+              "<meta name=\"viewport\" content=\"desktop-width, initial-scale=2.0\">",
+              "<meta http-equiv=\"refresh\" content=\"30\">",
+              "<meta name=\"keywords\" content=\"LearnSphere, dashboard\">"
+            ],
+            answer: "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+          }
+        ]
+      },
+
+      // ⭐ New Episode 3: Fluid Widths with %, vw, rem
+      {
+        id: 3,
+        title: "Applying Fluid Widths with %, vw, and rem",
+        desc: "Understand how to make layouts fluid using percentage, viewport, and rem-based widths.",
+        videoUrl: "https://mega.nz/embed/T8RkCDLB#ZgVivEtQn6VJDlrJ7RQNGV2cDAJn7GPcQ5r18_CZjRw",
+        quiz: [
+          {
+            question: "1. Which CSS unit makes an element’s width relative to its parent container?",
+            options: ["px", "%", "vw", "rem"],
+            answer: "%"
+          },
+          {
+            question: "2. Which unit is based on the width of the viewport?",
+            options: ["rem", "%", "vw", "em"],
+            answer: "vw"
+          },
+          {
+            question: "3. What does 50vw mean for an element’s width?",
+            options: [
+              "50% of its parent’s width",
+              "50px width",
+              "50% of the viewport width",
+              "50% of the viewport height"
+            ],
+            answer: "50% of the viewport width"
+          },
+          {
+            question: "4. Which unit is relative to the root (html) font size?",
+            options: ["vw", "rem", "%", "vh"],
+            answer: "rem"
+          },
+          {
+            question: "5. You want a container that always takes 80% of the screen width, regardless of parent. Which is best?",
+            options: ["width: 80%;", "width: 80vw;", "width: 80rem;", "width: 80px;"],
+            answer: "width: 80vw;"
+          },
+          {
+            question: "6. You want a card that is 60% of its parent’s width. Which declaration is correct?",
+            options: [
+              "width: 60vw;",
+              "width: 60rem;",
+              "width: 60%;",
+              "width: 60px;"
+            ],
+            answer: "width: 60%;"
+          },
+          {
+            question: "7. If html { font-size: 16px; }, what is the pixel width of width: 20rem;?",
+            options: ["16px", "20px", "160px", "320px"],
+            answer: "320px"
+          },
+          {
+            question: "8. Which unit is most suitable for consistent spacing (padding/margin) across the app based on root font size?",
+            options: ["%", "vw", "px", "rem"],
+            answer: "rem"
+          },
+          {
+            question: "9. You want a hero section that always spans the full viewport width. Which is the best choice?",
+            options: [
+              "width: 100%;",
+              "width: 100vw;",
+              "max-width: 100rem;",
+              "width: auto;"
+            ],
+            answer: "width: 100vw;"
+          },
+          {
+            question: "10. For a responsive layout, which combination is commonly used together?",
+            options: [
+              "% for widths, rem for text and spacing, vw for full-width sections",
+              "px for everything",
+              "vw for fonts only",
+              "rem only for widths and heights"
+            ],
+            answer: "% for widths, rem for text and spacing, vw for full-width sections"
           }
         ]
       }

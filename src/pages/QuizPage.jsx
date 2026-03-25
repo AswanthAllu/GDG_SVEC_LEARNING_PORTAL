@@ -243,6 +243,7 @@ const QuizPage = () => {
           <Trophy size={80} className="trophy-icon" />
           <h1>Quiz Completed!</h1>
           
+          
           {studentInfo && (
             <div style={{ 
               background: 'rgba(100, 255, 218, 0.1)', 
