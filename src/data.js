@@ -730,11 +730,7 @@ export const courses = [
           }
         ]
       },
-<<<<<<< HEAD
-            {
-=======
       {
->>>>>>> d0d4f53eda46a2cb1db6b1b38e4fc3d4f71bbed0
         id: 2,
         title: "Mobile-First Semantic Layout for LearnSphere",
         desc: "We build a simple dashboard page for LearnSphere using semantic HTML tags and a mobile-first structure.",
@@ -841,7 +837,6 @@ export const courses = [
             answer: "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
           }
         ]
-<<<<<<< HEAD
       },
 
       // ⭐ New Episode 3: Fluid Widths with %, vw, rem
@@ -922,8 +917,6 @@ export const courses = [
             answer: "% for widths, rem for text and spacing, vw for full-width sections"
           }
         ]
-=======
->>>>>>> d0d4f53eda46a2cb1db6b1b38e4fc3d4f71bbed0
       }
     ]
   }
