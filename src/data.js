@@ -985,7 +985,81 @@ export const courses = [
             "answer": ".item { flex: 33.3%; } @media (max-width: 600px) { .item { flex: 100%; } }"
           }
         ]
+      },
+      {
+        "id": 5,
+        "title": " CSS Grid for section alignment",
+        "desc": "Understand CSS Grid with practical quiz.",
+        "videoUrl": "https://mega.nz/embed/elwQ1TgQ#jKF9usLsx8l8C57EC16UWYJrtXT03pEfUegMwCB-zs4",
+        "quiz": [
+          {
+            "question": "1.Which CSS property is used to enable Grid layout on a container?",
+            "options": ["display: flex", "display: grid", "display: block", "display: inline-grid container"],
+            "answer": "display: grid"
+          },
+          {
+            "question": "2. Which property aligns ALL grid items vertically (along the block axis) within their cells?",
+            "options": ["justify-items", "justify-content", "align-items", "place-content"],
+            "answer": "align-items"
+          },
+          {
+            "question": "3. What does 'justify-items: center' do in a grid container?",
+            "options": ["Centers the entire grid horizontally inside the container", "Centers each grid item horizontally within its own cell", "Centers each grid item vertically within its own cell", "Adds equal space between grid columns"],
+            "answer": "Centers each grid item horizontally within its own cell"
+          },
+          {
+            "question": "4. Which property is the shorthand for both 'align-items' and 'justify-items'?",
+            "options": ["place-content", "place-self", "place-items", "grid-place"],
+            "answer": "place-items"
+          },
+          {
+            "question": "5. What is the difference between 'align-items' and 'align-content'?",
+            "options": ["They are the same property with different names", "'align-items' aligns items within cells; 'align-content' aligns the whole grid within the container", "'align-content' aligns items within cells; 'align-items' aligns the whole grid", "'align-items' works only on flex containers"],
+            "answer": "'align-items' aligns items within cells; 'align-content' aligns the whole grid within the container"
+          },
+          {
+            "question": "6. Which property would you use to override the vertical alignment of a SINGLE grid item?",
+            "options": [
+              "align-items",
+              "align-self",
+              "justify-items",
+              "place-content"
+            ],
+            "answer": "align-self"
+          },
+          {
+            "question": "7. What does the following CSS do?\n.wrapper { display: grid; place-items: center; min-height: 100vh; }",
+            "options": [
+              "Creates a 3-column grid layout",
+              "Perfectly centers any child element both horizontally and vertically",
+              "Stretches all grid items to fill the full viewport",
+              "Aligns all items to the top-left corner"
+            ],
+            "answer": "Perfectly centers any child element both horizontally and vertically"
+          },
+          {
+            "question": "8. Which property is used to define named layout zones like 'header', 'sidebar', and 'footer' in CSS Grid?",
+            "options": ["grid-template-columns", "grid-template-rows", "grid-template-areas", "grid-area"],
+            "answer": "grid-template-areas"
+          },
+          {
+            "question": "9. What value of 'justify-content' spreads grid columns with equal space between them but NO space at the edges?",
+            "options": ["space-around", "space-evenly", "space-between", "stretch"],
+            "answer": "space-between"
+          },
+          {
+            "question": "10.Which shorthand property combines 'align-self' and 'justify-self' for a single grid item?",
+            "options": [
+              "place-items",
+              "place-content",
+              "place-self",
+              "self-align"
+            ],
+            "answer": "place-self"
+          }
+        ]
       }
+
     ]
   }
 ];
