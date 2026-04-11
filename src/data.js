@@ -1063,7 +1063,7 @@ export const courses = [
         "id": 6,
         "title": "Implement mobile-first media queries",
         "desc": "Understanding the media queries for responsive design.",
-        "videoUrl": "https://mega.nz/embed/DsIgkARA#EDU0g051JLGzso9DfLa9rb6PDdxBkJedm0xGo_Vqubk",
+        "videoUrl": "https://mega.nz/embed/29gjGQzI#lcLuw9prsWXJAe2gqy10f8ONjGATrw5qXBjbW1kZQNA",
         "quiz": [
           {
             "question": "1. What does 'mobile-first' mean in the context of CSS media queries?",
