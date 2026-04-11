@@ -988,7 +988,7 @@ export const courses = [
       },
       {
         "id": 5,
-        "title": " CSS Grid for section alignment",
+        "title": "CSS Grid for section alignment",
         "desc": "Understand CSS Grid with practical quiz.",
         "videoUrl": "https://mega.nz/embed/elwQ1TgQ#jKF9usLsx8l8C57EC16UWYJrtXT03pEfUegMwCB-zs4",
         "quiz": [
@@ -1058,8 +1058,115 @@ export const courses = [
             "answer": "place-self"
           }
         ]
+      },
+      {
+        "id": 6,
+        "title": "Implement mobile-first media queries",
+        "desc": "Understanding the media queries for responsive design.",
+        "videoUrl": "https://mega.nz/embed/DsIgkARA#EDU0g051JLGzso9DfLa9rb6PDdxBkJedm0xGo_Vqubk",
+        "quiz": [
+          {
+            "question": "1. What does 'mobile-first' mean in the context of CSS media queries?",
+            "options": [
+              "Writing styles for desktop first, then overriding for mobile",
+              "Writing base styles for mobile, then adding styles for larger screens",
+              "Using only mobile-specific CSS properties",
+              "Hiding desktop elements on mobile devices"
+            ],
+            "answer": "Writing base styles for mobile, then adding styles for larger screens"
+          },
+          {
+            "question": "2. Which media query keyword is used in a mobile-first approach to target larger screens?",
+            "options": [
+              "max-width",
+              "min-width",
+              "max-height",
+              "screen-size"
+            ],
+            "answer": "min-width"
+          },
+          {
+            "question": "3. Which of the following is a correct mobile-first media query for tablets (768px and above)?",
+            "options": [
+              "@media (max-width: 768px) { }",
+              "@media (min-width: 768px) { }",
+              "@media screen and (width: 768px) { }",
+              "@media (device-width: 768px) { }"
+            ],
+            "answer": "@media (min-width: 768px) { }"
+          },
+          {
+            "question": "4. What is the correct syntax to apply styles only when the screen width is between 600px and 1024px?",
+            "options": [
+              "@media (min-width: 600px) and (max-width: 1024px) { }",
+              "@media (width: 600px to 1024px) { }",
+              "@media between(600px, 1024px) { }",
+              "@media (min-width: 600px) or (max-width: 1024px) { }"
+            ],
+            "answer": "@media (min-width: 600px) and (max-width: 1024px) { }"
+          },
+          {
+            "question": "5. Which HTML meta tag is essential for media queries to work correctly on mobile devices?",
+            "options": [
+              "<meta name='description' content='responsive'>",
+              "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+              "<meta name='mobile' content='true'>",
+              "<meta name='screen' content='responsive'>"
+            ],
+            "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+          },
+          {
+            "question": "6. In a mobile-first strategy, which CSS rule order is correct?",
+            "options": [
+              "Desktop styles first, then @media (max-width) overrides",
+              "Mobile base styles first, then @media (min-width) overrides",
+              "Tablet styles first, then mobile and desktop overrides",
+              "All styles inside separate @media blocks only"
+            ],
+            "answer": "Mobile base styles first, then @media (min-width) overrides"
+          },
+          {
+            "question": "7. Which media feature is used to apply styles based on the device's screen orientation?",
+            "options": [
+              "@media (display: landscape)",
+              "@media (orientation: landscape)",
+              "@media (screen-mode: portrait)",
+              "@media (rotation: 90deg)"
+            ],
+            "answer": "@media (orientation: landscape)"
+          },
+          {
+            "question": "8. What does the following media query target?\n@media only screen and (min-width: 1200px) { }",
+            "options": [
+              "Screens smaller than 1200px",
+              "Only print media above 1200px",
+              "Screens 1200px wide and above (typically large desktops)",
+              "Screens exactly 1200px wide"
+            ],
+            "answer": "Screens 1200px wide and above (typically large desktops)"
+          },
+          {
+            "question": "9. Which of the following correctly uses a media query to load a stylesheet only for print?",
+            "options": [
+              "@media (type: print) { }",
+              "<link rel='stylesheet' media='print' href='print.css'>",
+              "<link rel='stylesheet' type='print' href='print.css'>",
+              "@media screen-print { }"
+            ],
+            "answer": "<link rel='stylesheet' media='print' href='print.css'>"
+          },
+          {
+            "question": "10. Which CSS media feature detects if the user prefers a dark color scheme?",
+            "options": [
+              "@media (color-scheme: dark)",
+              "@media (theme: dark)",
+              "@media (prefers-color-scheme: dark)",
+              "@media (user-theme: dark)"
+            ],
+            "answer": "@media (prefers-color-scheme: dark)"
+          }
+        ]
       }
-
     ]
   }
 ];
