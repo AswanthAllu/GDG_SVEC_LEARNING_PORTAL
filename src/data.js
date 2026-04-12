@@ -1166,6 +1166,64 @@ export const courses = [
             "answer": "@media (prefers-color-scheme: dark)"
           }
         ]
+      },
+      {
+        "id": 7,
+        "title": "Make Image and Video Responsive",
+        "desc": "Learn how to make images and videos responsive using CSS techniques like max-width, object-fit, aspect-ratio, srcset, the picture element, and the padding-top iframe trick.",
+        "videoUrl": "https://mega.nz/embed/n8Qx3KgD#K_Th9TM4aZ3Wa6Gqz8UYDDtCdDPnuDAb98-F5NOMx08",
+        "quiz": [
+          {
+            "question": "1. Which CSS property is used to make an image scale with its container while maintaining aspect ratio?",
+            "options": ["width: auto", "max-width: 100%", "width: 100vw", "display: flex"],
+            "answer": "max-width: 100%"
+          },
+          {
+            "question": "2. What does the following CSS do? `img { width: 100%; height: auto; }`",
+            "options": ["Stretches the image to fill the screen", "Makes the image responsive by scaling width and preserving aspect ratio", "Crops the image to fit the container", "Fixes the image to 100 pixels wide"],
+            "answer": "Makes the image responsive by scaling width and preserving aspect ratio"
+          },
+          {
+            "question": "3. Which HTML element is used to provide multiple image sources for different screen sizes?",
+            "options": ["<img>", "<source>", "<picture>", "<figure>"],
+            "answer": "<picture>"
+          },
+          {
+            "question": "4. What is the purpose of the `srcset` attribute in an <img> tag?",
+            "options": ["To set the image source for all devices", "To provide multiple image sources for different resolutions or widths", "To define image fallback colors", "To lazy-load images"],
+            "answer": "To provide multiple image sources for different resolutions or widths"
+          },
+          {
+            "question": "5. How do you make a video responsive using pure CSS without any JavaScript?",
+            "options": ["Set video { width: fixed; }", "Wrap the video in a div with padding-top: 56.25% and position the video absolutely", "Use display: grid on the video tag", "Set video { height: 100vh; }"],
+            "answer": "Wrap the video in a div with padding-top: 56.25% and position the video absolutely"
+          },
+          {
+            "question": "6. Which CSS property introduced in modern CSS helps maintain aspect ratio without the padding hack?",
+            "options": ["object-fit", "aspect-ratio", "resize", "clip-path"],
+            "answer": "aspect-ratio"
+          },
+          {
+            "question": "7. What does `object-fit: cover` do to an image inside a fixed-size container?",
+            "options": ["Shrinks the image to fit fully inside the container", "Scales the image to cover the container while cropping excess", "Stretches the image to fill the container, distorting it", "Centers the image without resizing"],
+            "answer": "Scales the image to cover the container while cropping excess"
+          },
+          {
+            "question": "8. What is the correct way to embed a responsive YouTube video using an iframe?",
+            "options": ["Set the iframe width and height to 100%", "Wrap the iframe in a container with position: relative and use padding-top: 56.25%, then set iframe to position: absolute with full width/height", "Use display: block on the iframe", "Add the attribute responsive='true' to the iframe"],
+            "answer": "Wrap the iframe in a container with position: relative and use padding-top: 56.25%, then set iframe to position: absolute with full width/height"
+          },
+          {
+            "question": "9. Which attribute in the `<source>` element (inside `<picture>`) is used to specify the screen condition for that image?",
+            "options": ["src", "type", "media", "srcset"],
+            "answer": "media"
+          },
+          {
+            "question": "10. What is the effect of setting `max-width: 100%` vs `width: 100%` on an image?",
+            "options": ["They are identical in behavior", "max-width: 100% prevents the image from exceeding its natural size; width: 100% always stretches it to fill the container", "width: 100% is only for block elements", "max-width: 100% crops the image"],
+            "answer": "max-width: 100% prevents the image from exceeding its natural size; width: 100% always stretches it to fill the container"
+          }
+        ]
       }
     ]
   }
