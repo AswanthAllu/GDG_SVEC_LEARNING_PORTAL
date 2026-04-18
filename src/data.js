@@ -256,12 +256,7 @@ export const courses = [
           },
           {
             "question": "3. Why is <img> considered a void element?",
-            "options": [
-              "It requires a closing tag",
-              "It is deprecated",
-              "It doesn't have a closing tag",
-              "It supports only text"
-            ],
+            "options": ["It requires a closing tag", "It is deprecated", "It doesn't have a closing tag", "It supports only text"],
             "answer": "It doesn't have a closing tag"
           },
           {
@@ -291,22 +286,12 @@ export const courses = [
           },
           {
             "question": "9. What does border: solid 1px white; do?",
-            "options": [
-              "Applies a white dotted border",
-              "Adds solid white border of 1px thickness",
-              "Removes the border",
-              "Makes text bold"
-            ],
+            "options": ["Applies a white dotted border", "Adds solid white border of 1px thickness", "Removes the border", "Makes text bold"],
             "answer": "Adds solid white border of 1px thickness"
           },
           {
             "question": "10. What is the purpose of the <span> tag?",
-            "options": [
-              "Break content into blocks",
-              "Apply inline styles or group inline text",
-              "Display lists",
-              "Add images"
-            ],
+            "options": ["Break content into blocks", "Apply inline styles or group inline text", "Display lists", "Add images"],
             "answer": "Apply inline styles or group inline text"
           }
         ]
@@ -324,22 +309,12 @@ export const courses = [
           },
           {
             "question": "2. What does the 'justify-content: center' property do in a flex container?",
-            "options": [
-              "Aligns items to the top of the container",
-              "Aligns items to the bottom of the container",
-              "Centers items horizontally in the container",
-              "Aligns items vertically in the container"
-            ],
+            "options": ["Aligns items to the top of the container", "Aligns items to the bottom of the container", "Centers items horizontally in the container", "Aligns items vertically in the container"],
             "answer": "Centers items horizontally in the container"
           },
           {
             "question": "3. What does the 'flex-direction' property control in a flex container?",
-            "options": [
-              "The spacing between flex items",
-              "The direction of flex items",
-              "The alignment of flex items",
-              "The size of flex items"
-            ],
+            "options": ["The spacing between flex items", "The direction of flex items", "The alignment of flex items", "The size of flex items"],
             "answer": "The direction of flex items"
           },
           {
@@ -627,102 +602,52 @@ export const courses = [
         "quiz": [
           {
             "question": "1. What is the main goal of Responsive Web Design?",
-            "options": [
-              "To make sure a website looks good and works well on all devices (desktops, tablets, and phones).",
-              "To make a website load as slowly as possible.",
-              "To write backend database logic.",
-              "To force users to only view the site on a desktop computer."
-            ],
+            "options": ["To make sure a website looks good and works well on all devices (desktops, tablets, and phones).", "To make a website load as slowly as possible.", "To write backend database logic.", "To force users to only view the site on a desktop computer."],
             "answer": "To make sure a website looks good and works well on all devices (desktops, tablets, and phones)."
           },
           {
             "question": "2. Which HTML tag is required to control the page's dimensions and scaling on mobile devices?",
-            "options": [
-              "<meta name=\"viewport\">",
-              "<title>",
-              "<link rel=\"stylesheet\">",
-              "<script>"
-            ],
+            "options": ["<meta name=\"viewport\">", "<title>", "<link rel=\"stylesheet\">", "<script>"],
             "answer": "<meta name=\"viewport\">"
           },
           {
             "question": "3. What is a 'Media Query' in CSS?",
-            "options": [
-              "A way to query a database for media files like images and videos.",
-              "A CSS technique used to apply styles only when a specific condition is true (e.g., screen width).",
-              "A JavaScript function to play audio on a webpage.",
-              "An HTML tag used to embed responsive videos."
-            ],
+            "options": ["A way to query a database for media files like images and videos.", "A CSS technique used to apply styles only when a specific condition is true (e.g., screen width).", "A JavaScript function to play audio on a webpage.", "An HTML tag used to embed responsive videos."],
             "answer": "A CSS technique used to apply styles only when a specific condition is true (e.g., screen width)."
           },
           {
             "question": "4. What does the 'Mobile-First' approach mean in web development?",
-            "options": [
-              "Designing the desktop version first, then shrinking it for mobile.",
-              "Only building websites for mobile phones and ignoring desktops.",
-              "Designing the mobile version of a website first, and then scaling it up for larger screens.",
-              "Developing mobile apps using Java or Swift instead of web technologies."
-            ],
+            "options": ["Designing the desktop version first, then shrinking it for mobile.", "Only building websites for mobile phones and ignoring desktops.", "Designing the mobile version of a website first, and then scaling it up for larger screens.", "Developing mobile apps using Java or Swift instead of web technologies."],
             "answer": "Designing the mobile version of a website first, and then scaling it up for larger screens."
           },
           {
             "question": "5. How do you make an image responsive so it never scales larger than its original size but shrinks on smaller screens?",
-            "options": [
-              "width: 100px; height: 100px;",
-              "max-width: 100%; height: auto;",
-              "min-width: 100%; height: 100%;",
-              "display: none;"
-            ],
+            "options": ["width: 100px; height: 100px;", "max-width: 100%; height: auto;", "min-width: 100%; height: 100%;", "display: none;"],
             "answer": "max-width: 100%; height: auto;"
           },
           {
             "question": "6. What are 'breakpoints' in responsive design?",
-            "options": [
-              "Points where the code breaks and causes an error.",
-              "Specific screen widths where the website's layout changes using media queries.",
-              "The space between text paragraphs.",
-              "The physical buttons on a mobile device."
-            ],
+            "options": ["Points where the code breaks and causes an error.", "Specific screen widths where the website's layout changes using media queries.", "The space between text paragraphs.", "The physical buttons on a mobile device."],
             "answer": "Specific screen widths where the website's layout changes using media queries."
           },
           {
             "question": "7. Which of the following is a relative unit commonly used in responsive design?",
-            "options": [
-              "Pixels (px)",
-              "Centimeters (cm)",
-              "Percentages (%)",
-              "Inches (in)"
-            ],
+            "options": ["Pixels (px)", "Centimeters (cm)", "Percentages (%)", "Inches (in)"],
             "answer": "Percentages (%)"
           },
           {
             "question": "8. Why is responsive web design important for Search Engine Optimization (SEO)?",
-            "options": [
-              "Search engines like Google penalize mobile-friendly websites.",
-              "It allows you to hide keywords from users on mobile devices.",
-              "Search engines prioritize mobile-friendly websites in their search results.",
-              "SEO and responsive design are completely unrelated."
-            ],
+            "options": ["Search engines like Google penalize mobile-friendly websites.", "It allows you to hide keywords from users on mobile devices.", "Search engines prioritize mobile-friendly websites in their search results.", "SEO and responsive design are completely unrelated."],
             "answer": "Search engines prioritize mobile-friendly websites in their search results."
           },
           {
             "question": "9. Which modern CSS layout modules are heavily used to build flexible, responsive grid structures?",
-            "options": [
-              "HTML Tables",
-              "Flexbox and CSS Grid",
-              "Floats and Clearfixes",
-              "Inline styling"
-            ],
+            "options": ["HTML Tables", "Flexbox and CSS Grid", "Floats and Clearfixes", "Inline styling"],
             "answer": "Flexbox and CSS Grid"
           },
           {
             "question": "10. What does the term 'Fluid Layout' refer to?",
-            "options": [
-              "A layout that uses fixed pixel widths for all elements.",
-              "A layout that uses proportional values like percentages to adapt to the screen size.",
-              "A website design that features water animations.",
-              "A layout that only works on Apple devices."
-            ],
+            "options": ["A layout that uses fixed pixel widths for all elements.", "A layout that uses proportional values like percentages to adapt to the screen size.", "A website design that features water animations.", "A layout that only works on Apple devices."],
             "answer": "A layout that uses proportional values like percentages to adapt to the screen size."
           }
         ]
@@ -735,102 +660,52 @@ export const courses = [
         "quiz": [
           {
             "question": "1. In a mobile-first layout like the LearnSphere page, how should the main sections typically be arranged in the HTML?",
-            "options": [
-              "Header at the top, main content below, footer at the bottom.",
-              "Footer at the top, header at the bottom, main in the middle.",
-              "Main content at the top, header below, footer hidden.",
-              "All sections placed side by side using tables."
-            ],
+            "options": ["Header at the top, main content below, footer at the bottom.", "Footer at the top, header at the bottom, main in the middle.", "Main content at the top, header below, footer hidden.", "All sections placed side by side using tables."],
             "answer": "Header at the top, main content below, footer at the bottom."
           },
           {
             "question": "2. Which semantic element is the best choice to wrap the LearnSphere logo or title at the top of the page?",
-            "options": [
-              "<main>",
-              "<header>",
-              "<section>",
-              "<article>"
-            ],
+            "options": ["<main>", "<header>", "<section>", "<article>"],
             "answer": "<header>"
           },
           {
             "question": "3. On the LearnSphere page, the list with items like Dashboard, Courses, Profile, and Settings belongs inside which semantic element?",
-            "options": [
-              "<nav>",
-              "<footer>",
-              "<aside>",
-              "<article>"
-            ],
+            "options": ["<nav>", "<footer>", "<aside>", "<article>"],
             "answer": "<nav>"
           },
           {
             "question": "4. The LearnSphere portal shows information blocks like Students, Courses, and Completion. Which semantic element is most suitable to contain these statistics as the primary content?",
-            "options": [
-              "<footer>",
-              "<header>",
-              "<main>",
-              "<nav>"
-            ],
+            "options": ["<footer>", "<header>", "<main>", "<nav>"],
             "answer": "<main>"
           },
           {
             "question": "5. In a mobile-first semantic layout, how should the menu (Dashboard, Courses, Profile, Settings) generally appear on small screens?",
-            "options": [
-              "Stacked vertically in a simple list so it is easy to tap.",
-              "Hidden completely so only desktop users can see it.",
-              "Displayed in two columns using fixed pixel widths.",
-              "Placed only in the footer for mobile devices."
-            ],
+            "options": ["Stacked vertically in a simple list so it is easy to tap.", "Hidden completely so only desktop users can see it.", "Displayed in two columns using fixed pixel widths.", "Placed only in the footer for mobile devices."],
             "answer": "Stacked vertically in a simple list so it is easy to tap."
           },
           {
             "question": "6. Which HTML element is the most appropriate wrapper for the LearnSphere footer text or links (for example, copyright or additional info)?",
-            "options": [
-              "<section>",
-              "<footer>",
-              "<aside>",
-              "<article>"
-            ],
+            "options": ["<section>", "<footer>", "<aside>", "<article>"],
             "answer": "<footer>"
           },
           {
             "question": "7. Why is it a good idea to use headings like <h1>, <h2>, and <h3> for titles such as \"LearnSphere\", \"Menu\", \"Students\", and \"Courses\"?",
-            "options": [
-              "They automatically make the text bold without any CSS.",
-              "They provide a clear content hierarchy for users and screen readers.",
-              "They prevent the page from scrolling on mobile.",
-              "They are required for the page to load in the browser."
-            ],
+            "options": ["They automatically make the text bold without any CSS.", "They provide a clear content hierarchy for users and screen readers.", "They prevent the page from scrolling on mobile.", "They are required for the page to load in the browser."],
             "answer": "They provide a clear content hierarchy for users and screen readers."
           },
           {
             "question": "8. If you want to group each content block such as Students, Courses, and Completion inside the main area, which semantic element is the best choice?",
-            "options": [
-              "<article> for each block, because each is a self-contained piece of content.",
-              "<nav> for each block, because they look like links.",
-              "<aside> for each block, because they are always sidebars.",
-              "<span> for each block, because they are inline elements."
-            ],
+            "options": ["<article> for each block, because each is a self-contained piece of content.", "<nav> for each block, because they look like links.", "<aside> for each block, because they are always sidebars.", "<span> for each block, because they are inline elements."],
             "answer": "<article> for each block, because each is a self-contained piece of content."
           },
           {
             "question": "9. In a mobile-first design, which of the following best describes how you should write your base CSS for this LearnSphere layout?",
-            "options": [
-              "Write styles for large desktop screens first, then remove rules for smaller screens.",
-              "Write simple styles that look good on small screens first, then add media queries for larger screens.",
-              "Use only inline styles directly on each element.",
-              "Use tables for the layout so that CSS is not needed."
-            ],
+            "options": ["Write styles for large desktop screens first, then remove rules for smaller screens.", "Write simple styles that look good on small screens first, then add media queries for larger screens.", "Use only inline styles directly on each element.", "Use tables for the layout so that CSS is not needed."],
             "answer": "Write simple styles that look good on small screens first, then add media queries for larger screens."
           },
           {
             "question": "10. To make sure the LearnSphere page scales correctly on mobile devices, which meta tag should be included in the <head> of the HTML document?",
-            "options": [
-              "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
-              "<meta name=\"viewport\" content=\"desktop-width, initial-scale=2.0\">",
-              "<meta http-equiv=\"refresh\" content=\"30\">",
-              "<meta name=\"keywords\" content=\"LearnSphere, dashboard\">"
-            ],
+            "options": ["<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">", "<meta name=\"viewport\" content=\"desktop-width, initial-scale=2.0\">", "<meta http-equiv=\"refresh\" content=\"30\">", "<meta name=\"keywords\" content=\"LearnSphere, dashboard\">"],
             "answer": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
           }
         ]
@@ -853,12 +728,7 @@ export const courses = [
           },
           {
             "question": "3. What does 50vw mean for an element's width?",
-            "options": [
-              "50% of its parent's width",
-              "50px width",
-              "50% of the viewport width",
-              "50% of the viewport height"
-            ],
+            "options": ["50% of its parent's width", "50px width", "50% of the viewport width", "50% of the viewport height"],
             "answer": "50% of the viewport width"
           },
           {
@@ -873,12 +743,7 @@ export const courses = [
           },
           {
             "question": "6. You want a card that is 60% of its parent's width. Which declaration is correct?",
-            "options": [
-              "width: 60vw;",
-              "width: 60rem;",
-              "width: 60%;",
-              "width: 60px;"
-            ],
+            "options": ["width: 60vw;", "width: 60rem;", "width: 60%;", "width: 60px;"],
             "answer": "width: 60%;"
           },
           {
@@ -893,22 +758,12 @@ export const courses = [
           },
           {
             "question": "9. You want a hero section that always spans the full viewport width. Which is the best choice?",
-            "options": [
-              "width: 100%;",
-              "width: 100vw;",
-              "max-width: 100rem;",
-              "width: auto;"
-            ],
+            "options": ["width: 100%;", "width: 100vw;", "max-width: 100rem;", "width: auto;"],
             "answer": "width: 100vw;"
           },
           {
             "question": "10. For a responsive layout, which combination is commonly used together?",
-            "options": [
-              "% for widths, rem for text and spacing, vw for full-width sections",
-              "px for everything",
-              "vw for fonts only",
-              "rem only for widths and heights"
-            ],
+            "options": ["% for widths, rem for text and spacing, vw for full-width sections", "px for everything", "vw for fonts only", "rem only for widths and heights"],
             "answer": "% for widths, rem for text and spacing, vw for full-width sections"
           }
         ]
@@ -946,22 +801,12 @@ export const courses = [
           },
           {
             "question": "6. What does 'flex: 1' mean?",
-            "options": [
-              "The item has a fixed width of 1px",
-              "The item will not grow or shrink",
-              "The item will grow and shrink to fill available space equally",
-              "The item is ordered first"
-            ],
+            "options": ["The item has a fixed width of 1px", "The item will not grow or shrink", "The item will grow and shrink to fill available space equally", "The item is ordered first"],
             "answer": "The item will grow and shrink to fill available space equally"
           },
           {
             "question": "7. How do you switch layout from row to column for mobile?",
-            "options": [
-              "Changing flex-wrap",
-              "Using media queries with flex-direction",
-              "Setting justify-content",
-              "Using align-content"
-            ],
+            "options": ["Changing flex-wrap", "Using media queries with flex-direction", "Setting justify-content", "Using align-content"],
             "answer": "Using media queries with flex-direction"
           },
           {
@@ -976,12 +821,7 @@ export const courses = [
           },
           {
             "question": "10. Which code makes items 33.3% width and 100% on mobile?",
-            "options": [
-              ".item { width: 33.3%; } @media (max-width: 600px) { .item { width: 100%; } }",
-              ".item { flex: 33.3%; } @media (max-width: 600px) { .item { flex: 100%; } }",
-              ".item { flex-grow: 33.3%; } @media (max-width: 600px) { .item { flex-grow: 100%; } }",
-              ".item { display: flex; width: 33.3%; }"
-            ],
+            "options": [".item { width: 33.3%; } @media (max-width: 600px) { .item { width: 100%; } }", ".item { flex: 33.3%; } @media (max-width: 600px) { .item { flex: 100%; } }", ".item { flex-grow: 33.3%; } @media (max-width: 600px) { .item { flex-grow: 100%; } }", ".item { display: flex; width: 33.3%; }"],
             "answer": ".item { flex: 33.3%; } @media (max-width: 600px) { .item { flex: 100%; } }"
           }
         ]
@@ -1019,22 +859,12 @@ export const courses = [
           },
           {
             "question": "6. Which property would you use to override the vertical alignment of a SINGLE grid item?",
-            "options": [
-              "align-items",
-              "align-self",
-              "justify-items",
-              "place-content"
-            ],
+            "options": ["align-items", "align-self", "justify-items", "place-content"],
             "answer": "align-self"
           },
           {
             "question": "7. What does the following CSS do?\n.wrapper { display: grid; place-items: center; min-height: 100vh; }",
-            "options": [
-              "Creates a 3-column grid layout",
-              "Perfectly centers any child element both horizontally and vertically",
-              "Stretches all grid items to fill the full viewport",
-              "Aligns all items to the top-left corner"
-            ],
+            "options": ["Creates a 3-column grid layout", "Perfectly centers any child element both horizontally and vertically", "Stretches all grid items to fill the full viewport", "Aligns all items to the top-left corner"],
             "answer": "Perfectly centers any child element both horizontally and vertically"
           },
           {
@@ -1049,12 +879,7 @@ export const courses = [
           },
           {
             "question": "10.Which shorthand property combines 'align-self' and 'justify-self' for a single grid item?",
-            "options": [
-              "place-items",
-              "place-content",
-              "place-self",
-              "self-align"
-            ],
+            "options": ["place-items", "place-content", "place-self", "self-align"],
             "answer": "place-self"
           }
         ]
@@ -1067,102 +892,52 @@ export const courses = [
         "quiz": [
           {
             "question": "1. What does 'mobile-first' mean in the context of CSS media queries?",
-            "options": [
-              "Writing styles for desktop first, then overriding for mobile",
-              "Writing base styles for mobile, then adding styles for larger screens",
-              "Using only mobile-specific CSS properties",
-              "Hiding desktop elements on mobile devices"
-            ],
+            "options": ["Writing styles for desktop first, then overriding for mobile", "Writing base styles for mobile, then adding styles for larger screens", "Using only mobile-specific CSS properties", "Hiding desktop elements on mobile devices"],
             "answer": "Writing base styles for mobile, then adding styles for larger screens"
           },
           {
             "question": "2. Which media query keyword is used in a mobile-first approach to target larger screens?",
-            "options": [
-              "max-width",
-              "min-width",
-              "max-height",
-              "screen-size"
-            ],
+            "options": ["max-width", "min-width", "max-height", "screen-size"],
             "answer": "min-width"
           },
           {
             "question": "3. Which of the following is a correct mobile-first media query for tablets (768px and above)?",
-            "options": [
-              "@media (max-width: 768px) { }",
-              "@media (min-width: 768px) { }",
-              "@media screen and (width: 768px) { }",
-              "@media (device-width: 768px) { }"
-            ],
+            "options": ["@media (max-width: 768px) { }", "@media (min-width: 768px) { }", "@media screen and (width: 768px) { }", "@media (device-width: 768px) { }"],
             "answer": "@media (min-width: 768px) { }"
           },
           {
             "question": "4. What is the correct syntax to apply styles only when the screen width is between 600px and 1024px?",
-            "options": [
-              "@media (min-width: 600px) and (max-width: 1024px) { }",
-              "@media (width: 600px to 1024px) { }",
-              "@media between(600px, 1024px) { }",
-              "@media (min-width: 600px) or (max-width: 1024px) { }"
-            ],
+            "options": ["@media (min-width: 600px) and (max-width: 1024px) { }", "@media (width: 600px to 1024px) { }", "@media between(600px, 1024px) { }", "@media (min-width: 600px) or (max-width: 1024px) { }"],
             "answer": "@media (min-width: 600px) and (max-width: 1024px) { }"
           },
           {
             "question": "5. Which HTML meta tag is essential for media queries to work correctly on mobile devices?",
-            "options": [
-              "<meta name='description' content='responsive'>",
-              "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
-              "<meta name='mobile' content='true'>",
-              "<meta name='screen' content='responsive'>"
-            ],
+            "options": ["<meta name='description' content='responsive'>", "<meta name='viewport' content='width=device-width, initial-scale=1.0'>", "<meta name='mobile' content='true'>", "<meta name='screen' content='responsive'>"],
             "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
           },
           {
             "question": "6. In a mobile-first strategy, which CSS rule order is correct?",
-            "options": [
-              "Desktop styles first, then @media (max-width) overrides",
-              "Mobile base styles first, then @media (min-width) overrides",
-              "Tablet styles first, then mobile and desktop overrides",
-              "All styles inside separate @media blocks only"
-            ],
+            "options": ["Desktop styles first, then @media (max-width) overrides", "Mobile base styles first, then @media (min-width) overrides", "Tablet styles first, then mobile and desktop overrides", "All styles inside separate @media blocks only"],
             "answer": "Mobile base styles first, then @media (min-width) overrides"
           },
           {
             "question": "7. Which media feature is used to apply styles based on the device's screen orientation?",
-            "options": [
-              "@media (display: landscape)",
-              "@media (orientation: landscape)",
-              "@media (screen-mode: portrait)",
-              "@media (rotation: 90deg)"
-            ],
+            "options": ["@media (display: landscape)", "@media (orientation: landscape)", "@media (screen-mode: portrait)", "@media (rotation: 90deg)"],
             "answer": "@media (orientation: landscape)"
           },
           {
             "question": "8. What does the following media query target?\n@media only screen and (min-width: 1200px) { }",
-            "options": [
-              "Screens smaller than 1200px",
-              "Only print media above 1200px",
-              "Screens 1200px wide and above (typically large desktops)",
-              "Screens exactly 1200px wide"
-            ],
+            "options": ["Screens smaller than 1200px", "Only print media above 1200px", "Screens 1200px wide and above (typically large desktops)", "Screens exactly 1200px wide"],
             "answer": "Screens 1200px wide and above (typically large desktops)"
           },
           {
             "question": "9. Which of the following correctly uses a media query to load a stylesheet only for print?",
-            "options": [
-              "@media (type: print) { }",
-              "<link rel='stylesheet' media='print' href='print.css'>",
-              "<link rel='stylesheet' type='print' href='print.css'>",
-              "@media screen-print { }"
-            ],
+            "options": ["@media (type: print) { }", "<link rel='stylesheet' media='print' href='print.css'>", "<link rel='stylesheet' type='print' href='print.css'>", "@media screen-print { }"],
             "answer": "<link rel='stylesheet' media='print' href='print.css'>"
           },
           {
             "question": "10. Which CSS media feature detects if the user prefers a dark color scheme?",
-            "options": [
-              "@media (color-scheme: dark)",
-              "@media (theme: dark)",
-              "@media (prefers-color-scheme: dark)",
-              "@media (user-theme: dark)"
-            ],
+            "options": ["@media (color-scheme: dark)", "@media (theme: dark)", "@media (prefers-color-scheme: dark)", "@media (user-theme: dark)"],
             "answer": "@media (prefers-color-scheme: dark)"
           }
         ]
@@ -1222,6 +997,64 @@ export const courses = [
             "question": "10. What is the effect of setting `max-width: 100%` vs `width: 100%` on an image?",
             "options": ["They are identical in behavior", "max-width: 100% prevents the image from exceeding its natural size; width: 100% always stretches it to fill the container", "width: 100% is only for block elements", "max-width: 100% crops the image"],
             "answer": "max-width: 100% prevents the image from exceeding its natural size; width: 100% always stretches it to fill the container"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Add Responsive Typography using clamp()",
+        "desc": "Learn how to use the CSS clamp() function to create fluid, responsive typography that scales smoothly across all screen sizes without media queries.",
+        "videoUrl": "https://mega.nz/embed/HhhADIyb#ecv8ZBV9Jh-AKLo6uXPz_7GnF8Mpl8_iopjKY6r46lo",
+        "quiz": [
+          {
+            "question": "1. What is the correct syntax of the CSS clamp() function?",
+            "options": ["clamp(preferred, min, max)", "clamp(min, preferred, max)", "clamp(max, min, preferred)", "clamp(min, max)"],
+            "answer": "clamp(min, preferred, max)"
+          },
+          {
+            "question": "2. What does the MIN value in clamp() control?",
+            "options": ["The largest the font will ever be", "The fluid scaling value", "The smallest the font will ever be", "The default font size on desktop"],
+            "answer": "The smallest the font will ever be"
+          },
+          {
+            "question": "3. What does the MAX value in clamp() control?",
+            "options": ["The smallest the font will ever be", "The fluid scaling value based on viewport", "The largest the font will ever be", "The font size on mobile only"],
+            "answer": "The largest the font will ever be"
+          },
+          {
+            "question": "4. In `font-size: clamp(20px, 5vw, 36px)`, what happens when the viewport width is very small (e.g. 320px)?",
+            "options": ["Font size becomes 36px", "Font size becomes 5vw of 320px which is 16px, so MIN 20px is used", "Font size becomes 0px", "Font size becomes 5px"],
+            "answer": "Font size becomes 5vw of 320px which is 16px, so MIN 20px is used"
+          },
+          {
+            "question": "5. In `font-size: clamp(20px, 5vw, 36px)`, what happens on a 1440px wide screen?",
+            "options": ["Font size becomes 20px", "Font size becomes 72px", "Font size is capped at 36px (MAX kicks in)", "Font size becomes 5vw of 1440px which is 72px"],
+            "answer": "Font size is capped at 36px (MAX kicks in)"
+          },
+          {
+            "question": "6. What is the main advantage of using clamp() for typography over fixed px values?",
+            "options": ["It makes text bold automatically", "It eliminates the need for multiple media queries just for font sizing", "It changes the font family based on screen size", "It loads fonts faster"],
+            "answer": "It eliminates the need for multiple media queries just for font sizing"
+          },
+          {
+            "question": "7. Which CSS unit is typically used as the preferred (middle) value inside clamp() for fluid scaling?",
+            "options": ["px", "rem", "vw", "em"],
+            "answer": "vw"
+          },
+          {
+            "question": "8. What does `font-size: clamp(14px, 2.5vw, 20px)` mean?",
+            "options": ["Font is always 14px", "Font scales with viewport but never goes below 14px or above 20px", "Font is always 20px on desktop", "Font size is fixed at 2.5px"],
+            "answer": "Font scales with viewport but never goes below 14px or above 20px"
+          },
+          {
+            "question": "9. Which of the following best describes the PREFERRED value in clamp()?",
+            "options": ["It is always the final font size used", "It is the fluid value the browser uses when it falls between min and max", "It overrides both min and max always", "It is only used on tablet screens"],
+            "answer": "It is the fluid value the browser uses when it falls between min and max"
+          },
+          {
+            "question": "10. Which statement about clamp() is TRUE?",
+            "options": ["clamp() only works on font-size property", "clamp() can be used on any CSS property that accepts a numeric value like width, padding, and font-size", "clamp() requires JavaScript to work", "clamp() is not supported in modern browsers"],
+            "answer": "clamp() can be used on any CSS property that accepts a numeric value like width, padding, and font-size"
           }
         ]
       }
